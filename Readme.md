@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Павел Цыганов](https://up.htmlacademy.ru/htmlcss/30/user/99239).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
 
 ---
 
