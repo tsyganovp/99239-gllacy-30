@@ -7,25 +7,25 @@
   <body>
     <h1>Магазин мороженного</h1>
     <header class="main-header">
-      <img class="main-header__logo" src="">
+      <figure><img class="main-header__logo" src="#" alt="Логотип"></figure>
       <div class="navigation-left">
         <nav class = "main-nav">
           <ul>
-            <li class="main-nav__Link">Каталог</li>
-            <li class="main-nav__Link">Доставка и оплата</li>
-            <li class="main-nav__Link">О компании</li>   
+            <li class="main-nav__link">Каталог</li>
+            <li class="main-nav__link">Доставка и оплата</li>
+            <li class="main-nav__link">О компании</li>   
           </ul>          
         </nav>
       </div>
       <div class="navigation-right">
         <ul class="user-icons">
-          <li class="user-icons__icon user-icons__search">Поиск</li>
-          <li class="user-icons__icon user-icons__enter">Вход</li>
-          <li class="user-icons__icon user-icons__cart">Корзина</li>
+          <li class="user-icons__icon user-icons__search"><button>Поиск</button></li>
+          <li class="user-icons__icon user-icons__enter"><a href="#">Вход</a></li>
+          <li class="user-icons__icon user-icons__cart"><a href="#">Корзина</a></li>
         </ul>
         <div class="work-time">
           <p class = "work-time__text">с 10 до 20, ежедневно</p>
-          <p class = "work-time__phone">8 812 450-25-25</p>
+          <p class = "work-time__phone"><a href="tel:+78124502525">8 812 450-25-25</a></p>
         </div>
       </div>
     </header>
@@ -40,115 +40,179 @@
         </div>
       </section>
       <section class="promo-catalog">
+        <h2 class="promo-catalog__header">Промо-каталог</h2>
         <article class="promo-catalog__promo-block">
           <h2 class="promo-block__header">Малинка даром!</h2>
           <p class="promo-block__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <butoon class="promo-block__button">Хочу варенье!</butoon>
+          <button class="promo-block__button">Хочу варенье!</button>
         </article>
         <article class="promo-catalog__promo-block">
           <h2 class="promo-block__header">Шоколадки даром!</h2>
           <p class="promo-block__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <butoon class="promo-block__button">Хочу шоколадки!</butoon>
+          <button class="promo-block__button">Хочу шоколадки!</button>
         </article>
       </section>
       <section class="hits">
-        <article class="hits__hit">
-          <img src="" alt="" class="hit__img">
-          <span class="hit__icon">
-            <p>Хит</p>
-          </span>
-          <p class="hit__price"><span class ="price__big">310 ₽</span>/кг</p>
-          <p class="hit__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-        </article>
-        <article class="hits__hit">
-          <img src="" alt="" class="hit__img">
-          <span class="hit__icon">
-            <p>Хит</p>
-          </span>
-          <p class="hit__price"><span class ="price__big">380 ₽</span>/кг</p>
-          <p class="hit__text">Сливочно-кофейное с кусочками шоколада</p>
-        </article>
-        <article class="hits__hit">
-          <img src="" alt="" class="hit__img">
-          <span class="hit__icon">
-            <p>Хит</p>
-          </span>
-          <p class="hit__price"><span class ="price__big">355 ₽</span>/кг</p>
-          <p class="hit__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
-        </article>
-        <article class="hits__hit">
-          <img src="" alt="" class="hit__img">
-          <span class="hit__icon">
-            <p>Хит</p>
-          </span>
-          <p class="hit__price"><span class ="price__big">415 ₽</span>/кг</p>
-          <p class="hit__text">Сливочное крем-брюле с карамельной подливкой </p>
-        </article>   
+        <h2 class="hits__header">Наши хиты</h2>
+        <ul>
+          <li class="catalog__item">
+            
+              <figure><img src="#"  alt="Мороженное апельсиновое"></figure>
+           
+            <p class="item__price"><span class ="price__big">310 ₽</span>/кг</p>
+            <p class="item__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <span>Хит!</span>
+          </li>
+          <li class="catalog__item">
+           
+              <figure><img src="#"  alt="Мороженное кофейное"></figure>
+            
+            <p class="item__price"><span class ="price__big">380 ₽</span>/кг</p>
+            <p class="item__text">Сливочно-кофейное с кусочками шоколада</p>
+            <span>Хит!</span>
+          </li>
+          <li class="catalog__item">
+            
+              <figure><img src="#"  alt="Мороженное клубничное"></figure>
+            
+            <p class="item__price"><span class ="price__big">355 ₽</span>/кг</p>
+            <p class="item__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <span>Хит!</span>
+          </li>
+          <li class="catalog__item">
+            
+              <figure><img src="#"  alt="Мороженное крем-брюле"></figure>
+            
+            <p class="item__price"><span class ="price__big">415 ₽</span>/кг</p>
+            <p class="item__text">Сливочное крем-брюле с карамельной подливкой </p>
+            <span>Хит!</span>
+          </li>
+        </ul>
       </section>
       <section class="about-us">
-          <section>
+        <h2 class="about-us__header">О нас</h2>
+          <section class="about-us__features">
           <h2 class="about-us__header">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-          <article class="about-us__block">
-            <img src="" alt="" class="about-us__img">
-            <p class="about-us__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-          </article>
-          <article class="about-us__block">
-            <img src="" alt="" class="about-us__img">
-            <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-          </article>
-          <article class="about-us__block">
-            <img src="" alt="" class="about-us__img">
-            <p class="about-us__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-          </article>
-          <article class="about-us__block">
-            <img src="" alt="" class="about-us__img">
-            <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-          </article>
+          <ul>
+            <li class="about-us__block">
+              <figure><img src="#" alt="Мороженное" class="about-us__img"></figure>
+              <p class="about-us__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            </li>
+            <li class="about-us__block">
+              <figure><img src="#" alt="Мороженное" class="about-us__img"></figure>
+              <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            </li>
+            <li class="about-us__block">
+              <figure><img src="#" alt="Мороженное" class="about-us__img"></figure>
+              <p class="about-us__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            </li>
+            <li class="about-us__block">
+              <figure><img src="#" alt="Мороженное" class="about-us__img"></figure>
+              <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            </li>
+          </ul>
         </section>
         <section class="about-us__blog-section">
           <h2 class="blog-section__header">Новое в нашем блоге</h2>
           <a href="" class="blog-section__link">10 способов сервировки фруктовых щербетов к столу</a>  
         </section>
         <section class="emailer">
+          <h2 class="emailer__header">Подписка на рассылку</h2>
           <p class="emailer__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class = "emailer__form" action="">
-            <label for="emailer__form">
-              <input type="text" name="" id="">
+          <form class = "emailer__form" action="https://echo.htmlacademy.ru">
+            <label for="emailer__email-field">
+              <input type="text" name="email-field" id="emailer__email-field">
             </label>
               <label for="emailer__button">
-                <input class="emailer__button" type="submit" value="Отправить">
+                <input id="emailer__button" type="submit" value="Отправить">
               </label>
           </form>
         </section>
       </section>
       <section class="map">
-        <img src="" alt="" class="map__pointer">
-        <artilce class="map__contacts">
+        <h2 class="map__header">Карта</h2>
+        <figure><img src="#" alt="Курсор карты" class="map__pointer"></figure>
+        <section class="map__contacts">
+          <h2 class="contacts__header">Контакты</h2>
           <p class="contacts__top-text">Адрес главного офиса и офлайн-магазина:<span class="top-text-big">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
-          <p class="contacts__bottom-text">Для заказов по телефону:<span class = "contacts__phone">8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
-          <a href="" class="contacts__button">Форма обратной связи</a>
-        </artilce>
+          <p class="contacts__bottom-text">Для заказов по телефону:<span class = "contacts__phone"><a href="tel:+78124502525"></a>8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
+          <a href="#" class="contacts__button">Форма обратной связи</a>
+        </section>
       </section>
       <footer>
         <div class="footer__socio">
-          <img src="" alt="" class="socio__img">
-          <img src="" alt="" class="socio__img">
-          <img src="" alt="" class="socio__img">
-          <img src="" alt="" class="socio__img">
+          <figure><img src="#" alt="Социальная иконка" class="socio__img"></figure>
+          <figure><img src="#" alt="Социальная иконка" class="socio__img"></figure>
+          <figure><img src="#" alt="Социальная иконка" class="socio__img"></figure>
+          <figure><img src="#" alt="Социальная иконка" class="socio__img"></figure>
         </div>
         <article class="footer__links">
-          <a href="" class="footer__link"><img src="" alt="">Для поставщиков</a>
+          <h2 class="liks__header">Ссылки</h2>
+          <a href="" class="footer__link"><img src="№" alt="Иконка">Для поставщиков</a>
           <a href="" class="footer__link">О производстве</a>
           <a href="" class="footer__link">Наши документы</a>
           <a href="" class="footer__link">Экологические стандарты</a>
         </article>
         <article class="footer__copyright">
-          <img src="" alt="" class="copyright__logo">
+          <h2 class="copyright_header">Копирайт</h2>
+          <figure><img src="#" alt="" class="copyright__logo"></figure>
           <p class="copyright__text">Сделано в HTML Academy © 2019</p>
         </article>
       </footer>
     </main>
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
-
+    <!--Выпадающее меню-->
+    <section class="main-nav__dropdown">
+      <h2 class="dropdown__header">Выпадающее меню</h2>
+      <ul>
+        <li class="dropdown__link dropdown__link--bold "></li>
+        <li class="dropdown__link">Новинки</li>
+        <li class="dropdown__link">Сливочное</li>
+        <li class="dropdown__link">Щербеты</li>
+        <li class="dropdown__link">Фруктовый лед</li>
+      </ul>
+    </section>
+    <!--Логин попап-->
+    <section class="login-popup">
+      <h2 class="login-popup__header">Форма фхода</h2>
+      <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="login-login">Логин</label>
+          <input id="login-login" type="email" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="login-password">Пароль</label>
+          <input id="login-password" type="password" name="password" placeholder="••••••">
+          <button type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </p>
+      </form>
+    </section> 
+    <!--Попап-поиска-->
+    <section class="search-popup">
+      <h2 class="search-popup__header">Простой поиск</h2>
+      <form class="search-popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <input id="search" type="text" name="search-form">
+        </p>
+      </form>
+    </section>
+    <!--Попап-форма обратной связи-->
+    <section class="feedback-popup">
+      <button type="button">Закрыть</button>
+      <h2 class="feedback-popup__header">Всплывающая форма обратной связи</h2>
+      <form class="feedback__form" method="post" action ="https://echo.htmlacademy.ru">
+        <fieldset>
+          <label for="user-name">Имя</label>
+          <input id="user-name" type="text" name="username">
+          <label for="user-email">Почта</label>
+          <input id="user-email" type="email" name="email">
+          <label for="user-message">Сообщение</label>
+          <textarea name="user-message" id="user-message" cols="30" rows="10"></textarea>
+          <button class="feedback__submit-button" type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>
