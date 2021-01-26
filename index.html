@@ -7,13 +7,13 @@
   <body>
     <h1>Магазин мороженного</h1>
     <header class="main-header">
-      <figure><img class="main-header__logo" src="https://via.placeholder.com/150x10" alt="Логотип"></figure>
+      <a><img class="main-header__logo" src="https://via.placeholder.com/150x10" alt="Основный логотип"></a>
       <div class="navigation-left">
         <nav class = "main-nav">
           <ul>
-            <li class="main-nav__link">Каталог</li>
-            <li class="main-nav__link">Доставка и оплата</li>
-            <li class="main-nav__link">О компании</li>   
+            <li class="main-nav__link"><a href="catalog.html">Каталог</a></li>
+            <li class="main-nav__link"><a href="#">Доставка и оплата</a></li>
+            <li class="main-nav__link"><a href="#">О компании</a></li>   
           </ul>          
         </nav>
       </div>
@@ -91,46 +91,45 @@
       </section>
       <section class="about-us">
         <h2 class="about-us__header">О нас</h2>
-          <section class="about-us__features">
-          <h2 class="about-us__header">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-          <ul>
-            <li class="about-us__block">
-              <figure><img src="https://via.placeholder.com/150x10" alt="Мороженное" class="about-us__img"></figure>
-              <p class="about-us__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            </li>
-            <li class="about-us__block">
-              <figure><img src="https://via.placeholder.com/150x10" alt="Мороженное" class="about-us__img"></figure>
-              <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-            </li>
-            <li class="about-us__block">
-              <figure><img src="https://via.placeholder.com/150x10" alt="Мороженное" class="about-us__img"></figure>
-              <p class="about-us__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            </li>
-            <li class="about-us__block">
-              <figure><img src="https://via.placeholder.com/150x10" alt="Мороженное" class="about-us__img"></figure>
-              <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-            </li>
-          </ul>
-        </section>
-        <section class="about-us__blog-section">
-          <h2 class="blog-section__header">Новое в нашем блоге</h2>
-          <a href="" class="blog-section__link">10 способов сервировки фруктовых щербетов к столу</a>  
-        </section>
-        <section class="emailer">
-          <h2 class="emailer__header">Подписка на рассылку</h2>
-          <p class="emailer__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class = "emailer__form" action="https://echo.htmlacademy.ru">
-            <label for="emailer__email-field">
-              <input type="text" name="email-field" id="emailer__email-field">
-            </label>
-              <label for="emailer__button">
-                <input id="emailer__button" type="submit" value="Отправить">
-              </label>
-          </form>
-        </section>
+        <h2 class="about-us__header">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <ul>
+          <li class="about-us__block">
+            <img src="https://via.placeholder.com/150x10" alt="" class="about-us__img">
+            <p class="about-us__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          </li>
+          <li class="about-us__block">
+            <img src="https://via.placeholder.com/150x10" alt="" class="about-us__img">
+            <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </li>
+          <li class="about-us__block">
+            <img src="https://via.placeholder.com/150x10" alt="" class="about-us__img">
+            <p class="about-us__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li class="about-us__block">
+            <img src="https://via.placeholder.com/150x10" alt="" class="about-us__img">
+            <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>
       </section>
+      <article class="about-us__blog-section">
+        <!--<h2 class="blog-section__header">Новое в нашем блоге</h2>-->
+        <a href="" class="blog-section__link">10 способов сервировки фруктовых щербетов к столу</a>  
+      </article>
+      <article class="emailer">
+        <h2 class="emailer__header">Подписка на рассылку</h2>
+        <p class="emailer__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class = "emailer__form" action="https://echo.htmlacademy.ru">
+          <label for="emailer__email-field">
+            <input type="text" name="email-field" id="emailer__email-field">
+          </label>
+          <label for="emailer__button">
+            <button type="submit" id="emailer__button">Отправить</button>
+            
+          </label>
+          </form>
+      </article>
       <section class="map">
-        <h2 class="map__header">Карта</h2>
+        <h2 class="map__header">Как к нам проехать</h2>
         <figure><img src="https://via.placeholder.com/150x10" alt="Курсор карты" class="map__pointer"></figure>
         <section class="map__contacts">
           <h2 class="contacts__header">Контакты</h2>
@@ -139,27 +138,28 @@
           <a href="#" class="contacts__button">Форма обратной связи</a>
         </section>
       </section>
-      <footer>
-        <div class="footer__socio">
-          <figure><img src="https://via.placeholder.com/150x10" alt="Социальная иконка" class="socio__img"></figure>
-          <figure><img src="https://via.placeholder.com/150x10" alt="Социальная иконка" class="socio__img"></figure>
-          <figure><img src="https://via.placeholder.com/150x10" alt="Социальная иконка" class="socio__img"></figure>
-          <figure><img src="https://via.placeholder.com/150x10" alt="Социальная иконка" class="socio__img"></figure>
-        </div>
-        <article class="footer__links">
-          <h2 class="liks__header">Ссылки</h2>
-          <a href="#" class="footer__link"><img src="№" alt="Иконка">Для поставщиков</a>
-          <a href="#" class="footer__link">О производстве</a>
-          <a href="#" class="footer__link">Наши документы</a>
-          <a href="#" class="footer__link">Экологические стандарты</a>
-        </article>
-        <article class="footer__copyright">
-          <h2 class="copyright_header">Копирайт</h2>
-          <figure><img src="https://via.placeholder.com/150x10" alt="" class="copyright__logo"></figure>
-          <p class="copyright__text">Сделано в HTML Academy © 2019</p>
-        </article>
-      </footer>
     </main>
+    <footer>
+      <div class="footer__socio">
+        <img src="https://via.placeholder.com/150x10" alt="Социальная иконка" class="socio__img">
+        <img src="https://via.placeholder.com/150x10" alt="Социальная иконка" class="socio__img">
+        <img src="https://via.placeholder.com/150x10" alt="Социальная иконка" class="socio__img">
+        <img src="https://via.placeholder.com/150x10" alt="Социальная иконка" class="socio__img">
+      </div>
+      <section class="footer__links">
+        <h2 class="liks__header">Полезные ссылки</h2>
+        <a href="#" class="footer__link"><img src="№" alt="Иконка">Для поставщиков</a>
+        <a href="#" class="footer__link">О производстве</a>
+        <a href="#" class="footer__link">Наши документы</a>
+        <a href="#" class="footer__link">Экологические стандарты</a>
+      </section>
+      <section class="footer__copyright">
+        <h2 class="copyright_header">Копирайт</h2>
+        <img src="https://via.placeholder.com/150x10" alt="" class="copyright__logo">
+        <p class="copyright__text">Сделано в HTML Academy © 2019</p>
+      </section>
+    </footer>
+    
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
     <!--Выпадающее меню-->
     <section class="main-nav__dropdown">
