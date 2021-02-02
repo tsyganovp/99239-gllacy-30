@@ -6,16 +6,20 @@
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/152.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Каталог мороженного</title>
   </head>
-  <body>
+  <body class="main-body">
     <header class="main-header">
       <a><img class="main-header__logo" src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
       <nav class = "main-nav">
         <ul>
-          <li class="main-nav__link"><a href="catalog.html">Каталог</a></li>
-          <li class="main-nav__link"><a href="#">Доставка и оплата</a></li>
-          <li class="main-nav__link"><a href="#">О компании</a></li>   
+          <li><a class="main-nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="main-nav__link" href="#">Доставка и оплата</a></li>
+          <li><a class="main-nav__link" href="#">О компании</a></li>   
         </ul>          
       </nav>
       <ul class="user-icons">
@@ -103,7 +107,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class ="filter__submit-btn" type="submit">Применить</button>
+            <button class ="button filter__submit-btn" type="submit">Применить</button>
           </form>
         </section>
         <section class="catalog">
@@ -233,7 +237,7 @@
           <th><p class="cart-preview__position-summary">300 руб</p></th>
         </tr>
         <tr>
-          <th><button type="submit">Закрыть</button></th>
+          <th><button class="button" type="submit">Закрыть</button></th>
           <th><figure><img src="#" alt="Изображение товара в корзине" class="cart-precview__image"></figure></th>
           <th><p class="cart-preview__text">Клубничный пломбир с присыпкой из белого шоколада</p></th>
           <th><p class="cart-preview__kilos">1.5 кг<span class="cart-preview__price">x 300 руб</span></p></th>
@@ -241,7 +245,7 @@
         </tr>
       </table>
       <p class="cart-preview__summary-text">Итого:<span class="cart-preview__summary-price">750 руб.</span></p>
-      <button class="cart-preview__submit-button" type="submit">Оформить заказ</button>
+      <button class="button cart-preview__submit-button" type="submit">Оформить заказ</button>
     </article>
   </body>
 </html>

@@ -7,16 +7,20 @@
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/152.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="main-body">
     <h1>Магазин мороженного</h1>
     <header class="main-header">
       <a><img class="main-header__logo" src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
       <nav class = "main-nav">
         <ul>
-          <li class="main-nav__link"><a href="catalog.html">Каталог</a></li>
-          <li class="main-nav__link"><a href="#">Доставка и оплата</a></li>
-          <li class="main-nav__link"><a href="#">О компании</a></li>   
+          <li><a class="main-nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="main-nav__link" href="#">Доставка и оплата</a></li>
+          <li><a class="main-nav__link" href="#">О компании</a></li>   
         </ul>          
       </nav>
       <ul class="user-icons">
@@ -32,7 +36,7 @@
     <main>
       <section class="main-slider">
         <h2 class="main-slider__promo-text">Шоколадный пломбир и лимонный сорбет</h2>
-        <button class="main-slider__promo-button">Давайте оба!</button>
+        <button class="button main-slider__promo-button">Давайте оба!</button>
         <div class="slider-icons">
           <span class="slider-icons__icon"></span>
           <span class="slider-icons__icon"></span>
@@ -41,15 +45,15 @@
       </section>
       <section class="promo-catalog">
         <h2 class="promo-catalog__header">Промо-каталог</h2>
-        <article class="promo-catalog__promo-block">
+        <article class="promo-catalog__promo-block raspberry-bg">
           <h2 class="promo-block__header">Малинка даром!</h2>
           <p class="promo-block__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="promo-block__button">Хочу варенье!</button>
+          <button class="button button promo-block__button">Хочу варенье!</button>
         </article>
-        <article class="promo-catalog__promo-block">
+        <article class="promo-catalog__promo-block chocolate-bg">
           <h2 class="promo-block__header">Шоколадки даром!</h2>
           <p class="promo-block__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button class="promo-block__button">Хочу шоколадки!</button>
+          <button class="button promo-block__button">Хочу шоколадки!</button>
         </article>
       </section>
       <section class="hits">
@@ -110,38 +114,38 @@
         <p class="emailer__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class = "emailer__form" action="https://echo.htmlacademy.ru">
           <label for="emailer__email-field">
-            <input type="text" name="email-field" id="emailer__email-field">
+            <input class="emailer-field" type="text" name="email-field" id="emailer__email-field" placeholder="email@example.com">
           </label>
           <label for="emailer__button">
-            <button type="submit" id="emailer__button">Отправить</button>  
+            <button class="button" type="submit" id="emailer__button">Отправить</button>  
           </label>
           </form>
       </div>
       <section class="map">
         <h2 class="map__header">Как к нам проехать</h2>
-        <img src="https://via.placeholder.com/150x10" alt="Курсор карты" class="map__pointer">
+        <img src="img/pointer.svg" alt="Курсор карты" class="map__pointer">
         <div class="map__contacts">
           <h2 class="contacts__header">Контакты</h2>
           <p class="contacts__top-text">Адрес главного офиса и офлайн-магазина:<span class="top-text-big">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
-          <p class="contacts__bottom-text">Для заказов по телефону:<span class = "contacts__phone"><a href="tel:+78124502525"></a>8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
+          <p class="contacts__bottom-text">Для заказов по телефону:<span class = "contacts__phone"><a href="tel:+78124502525">8 812 450-25-25</a></span>(с 10 до 20 ежедневно)</p>
           <a href="#" class="contacts__button">Форма обратной связи</a>
         </div>
       </section>
     </main>
     <footer>
       <ul class="socio-block">
-        <li class="socio-block__link"><a href="#">Facebook</a></li>
-        <li class="socio-block__link"><a href="#">Vkontakte</a></li>
-        <li class="socio-block__link"><a href="#">Instagram</a></li>
-        <li class="socio-block__link"><a href="#">Twitter</a></li>
+        <li class="socio-block__link"><a href="#">Facebook<img src="img/icons/facebook.svg" alt=""></a></li>
+        <li class="socio-block__link"><a href="#">Vkontakte<img src="img/icons/vkontakte.svg" alt=""></a></li>
+        <li class="socio-block__link"><a href="#">Instagram<img src="img/icons/insta.svg" alt=""></a></li>
+        <li class="socio-block__link"><a href="#">Twitter<img src="img/icons/twitter.svg" alt=""></a></li>
       </ul>
       <ul class="footer__links">
-        <li class="footer__link"><a href="#">Для поставщиков</a></li>
-        <li class="footer__link"><a href="#">О производстве</a></li>
-        <li class="footer__link"><a href="#">Наши документы</a></li>
-        <li class="footer__link"><a href="#">Экологические стандарты</a></li>
+        <li><a class="footer__link footer__link--bold" href="#">Для поставщиков</a></li>
+        <li><a class="footer__link" href="#">О производстве</a></li>
+        <li><a class="footer__link" href="#">Наши документы</a></li>
+        <li><a class="footer__link" href="#">Экологические стандарты</a></li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <div class="footer__copyright">
           <img src="img/academy-logo.svg" width="108" height="39" alt="" class="copyright__logo">
           <p class="copyright__text">Сделано в HTML Academy © 2019</p>
@@ -172,7 +176,7 @@
         <p>
           <label for="login-password">Пароль</label>
           <input id="login-password" type="password" name="password" placeholder="••••••">
-          <button type="submit">Войти</button>
+          <button class="button" type="submit">Войти</button>
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
         </p>
@@ -199,7 +203,7 @@
           <input id="user-email" type="email" name="email">
           <label for="user-message">Сообщение</label>
           <textarea name="user-message" id="user-message" cols="30" rows="10"></textarea>
-          <button class="feedback__submit-button" type="submit">Отправить</button>
+          <button class="button feedback__submit-button" type="submit">Отправить</button>
         </fieldset>
       </form>
     </section>
