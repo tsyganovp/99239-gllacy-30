@@ -7,6 +7,7 @@
   --index-second-background: #8996A6;
   --index-third-background: #9D8B84;
   --form-background: rgba(255, 255, 255, 0.2);
+  --link-visited:#D07058; 
 }
 
 .main-body
@@ -16,6 +17,14 @@
     padding: 0;
     font-family: Roboto;
     color: var(--white-text-color);
+}
+.link:hover
+{
+    color: #FFBC9E;
+}
+.link:active
+{
+    color: #FFBC9E;
 }
 .button
 {
@@ -336,4 +345,145 @@
     font-size: 16px;
     line-height: 18px;
     text-decoration: none;
+}
+/* Попапы*/
+.login-popup
+{
+    background: #F8F7F4;
+}
+.login-popup-email,
+.search-popup-text
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+.login-popup__form a
+{
+    color: var(--dark-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration:  none;
+}
+.search-popup
+{
+    background: #F8F7F4;
+}
+.feedback-popup
+{
+    background: #F8F7F4; 
+}
+.feedback-popup__header
+{
+    color: var(--dark-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.feedback__form label
+{
+    color: var(--dark-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+.cart-preview
+{
+    background: #F8F7F4;
+}
+.cart-preview__text
+{
+    color: var(--dark-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+.cart-preview__kilos
+{
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+.cart-preview__price
+{
+    color: #ABABAB;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+.cart-preview__position-summary
+{
+    color: var(--dark-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+.cart-preview__position-summary
+{
+    color: var(--dark-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+}
+/*Взаимодействия*/
+.main-nav__link:hover
+{
+    color: var(--dark-text-color);
+    font-weight: bold;
+    background: white;
+    
+}
+.main-nav__link:active
+{
+    background: #D07058;
+}
+.dropdown__link
+{
+    color: var(--dark-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+.dropdown__link:hover
+{
+    background: #FBDED7;
+}
+.dropdown__link:active
+{
+    background: #F6B5A5;
+}
+.catalog-sorting:hover
+{
+    color: #323232;   
+}
+.text-field:focus
+{
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
 }
