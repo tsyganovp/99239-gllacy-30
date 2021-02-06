@@ -51,9 +51,7 @@
   }
 .main-body {
     min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
+    
 
     min-width: 1200px;
     background: var(--index-first-background);
@@ -75,20 +73,16 @@
     text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 .main-header {
-    margin-bottom: 70px;
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
-
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-}
+    display: flex;
+    flex-wrap: wrap;}
 .main-header a {
-    grid-column: 1/2;
+    width: 155px;
 }
 .main-nav {
-   grid-column: 2/3;
+    width: 700px;  
 }
 .main-nav ul {
+    display: flex;
     list-style: none;
 }
 .main-nav__link {
@@ -98,14 +92,19 @@
     line-height: 18px;
 }
 .user-icons {
-    grid-column: 3/5;
-  
+    display: flex;
+    width: 250px;
 }
 .user-icons__icon {
     background: rgba(255, 255, 255, 0.2);
 }
 .work-time {
-    grid-column: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    
 }
 .work-time__text {
     font-weight: 500;
@@ -122,8 +121,7 @@
     
 }
 .main-slider {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    
 }
 .main-slider__promo-text {
     text-transform: uppercase;
@@ -132,22 +130,28 @@
 }
 .slider-icons
 {
-    grid-column: 1/2;
+    
 }
 .slider__img-conainer
 {
-    grid-column: 2/-1;
+   
 }
 .promo-catalog {
-    display: grid;
-    grid-column: 600px 600px;
+    display: flex;
+    justify-content: center;
+
+}
+.promo-catalog__promo-block
+{
+    width: 560px;
+    height: 230px;
 }
 .raspberry-bg {
-    grid-column: 1/2;
+   
     background:#a70424 url(../img/backgrounds/raspberry.jpg);
 }
 .chocolate-bg {
-    grid-column: 2/2;
+   
     background:#e6782a url(../img/backgrounds/chocolate.jpg);
 }
 .promo-block__header {
@@ -159,13 +163,25 @@
     line-height: 22px;
 }
 .promo-block__button {
-    
+ 
 }
-.hits ul {
-    
+/*
+.hits
+{
+    display: flex;
+    justify-content: center;
 }
+*/
 .hits ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     list-style: none;
+}
+.catalog__item
+{
+    width: 267px;
 }
 .item__price {
     font-size: 30px;
@@ -176,27 +192,17 @@
     font-size: 45px;
     line-height: 45px;
 }
-.catalog__item--orange {
-    
-    background-color: orange;
-}
-.catalog__item--coffee {
-   
-    background-color: chocolate;
-}
-.catalog__item--berry {
- 
-    background-color: crimson;
-}
-.catalog__item--brule {
-    
-    background-color: cadetblue;
-}
 .about-us {
+    grid-template-columns: 2;
+    grid-template-rows: min-content min-content ;
+    margin: auto;
     background:pink url(../img/pattern.jpg);
+    width: 1146px
     
 }
 .about-us__blog-section {
+    width: 560px;
+    height: 220px;
     background:pink url(../img/backgrounds/strawberry.jpg);
 }
 .about-us__header {
@@ -206,12 +212,21 @@
     line-height: 30px;
 }
 .about-us ul {
+    display: grid;
+    grid-template-columns: 550px 550px;
     list-style: none;
 }
+
 .about-us__text {
     color: var(--dark-text-color);
     font-size: 16px;
     line-height: 22px;
+}
+.addition-information
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .blog-section__text {
@@ -227,6 +242,8 @@
     text-decoration: underline;
 }
 .emailer {
+    width: 560px;
+    height: 220px;
     background: url(../img/backgrounds/mail.jpg);
 }
 .emailer__text {
@@ -242,10 +259,38 @@
 }
 .map {
     background:grey url(../img/backgrounds/map.jpg);
+    display: flex;
+    align-items: center;
+    height: 430px;
+    justify-content: space-around;
+}
+.map__pointer
+{
+    width: 80px;
+    height: 140px;
+}
+.map__contacts
+{
+    width: 303px;
+    height: 306px;
+    background-color: #FEFEFE;
+}
+
+.map__contacts-button
+{
+    
+    color: var(--white-text-color);
+    background: var(--button-background);
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 .page-footer {
-    outline: 5px solid rgba(255, 0, 0, 0.7);
-    outline-offset: -5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .contacts__top-text,
 .contacts__bottom-text {
@@ -268,9 +313,16 @@
     text-decoration: none;
 }
 .footer__links {
+    width: 327px;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
+.footer__links li {
+    width: 155px;
+}
 .socio-block {
+    display: flex;
     list-style: none;
 }
 .socio-block__link a {
