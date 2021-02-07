@@ -16,7 +16,7 @@
 
   <body class="main-body">
     <header class="main-header">
-      <a><img class="main-header__logo" src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
+      <a href="index.html"><img class="main-header__logo" src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
       
       <nav class = "main-nav">
         <ul>
@@ -259,11 +259,11 @@
       <ul class="footer__links">
         <li><a class="link footer__link footer__link--bold" href="#">Для поставщиков</a></li>
         <li><a class="link footer__link" href="#">О производстве</a></li>
-        <li><a class="linkfooter__link" href="#">Наши документы</a></li>
+        <li><a class="link footer__link" href="#">Наши документы</a></li>
         <li><a class="link footer__link" href="#">Экологические стандарты</a></li>
       </ul>
 
-      <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
         <div class="footer__copyright">
           <img src="img/academy-logo.svg" width="108" height="39" alt="" class="copyright__logo">
           <p class="copyright__text">Сделано в HTML Academy © 2019</p>
@@ -297,5 +297,68 @@
       <p class="cart-preview__summary-text">Итого:<span class="cart-preview__summary-price">750 руб.</span></p>
       <button class="button cart-preview__submit-button" type="submit">Оформить заказ</button>
     </article>
+     <!--Выпадающее меню-->
+  <section class="main-nav__dropdown">
+    <h2 class="dropdown__header">Выпадающее меню</h2>
+
+    <ul>
+      <li class="dropdown__link dropdown__link--bold">Новинки</li>
+      <li class="dropdown__link"><a href="catalog.html">Сливочное</a></li>
+      <li class="dropdown__link">Щербеты</li>
+      <li class="dropdown__link">Фруктовый лед</li>
+      <li class="dropdown__link">Мелорин</li>
+    </ul>
+  </section>
+
+
+  <!--Логин попап-->
+  <section class="login-popup">
+    <h2 class="login-popup__header">Форма фхода</h2>
+    
+    <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="login-login">Логин</label>
+        <input class ="login-popup-email" id="login-login" type="email" name="login" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="login-password">Пароль</label>
+        <input class="text-field" id="login-password" type="password" name="password" placeholder="••••••">
+        <button class="button" type="submit">Войти</button>
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </p>
+    
+    </form>
+  </section> 
+
+
+  <!--Попап-поиска-->
+  <section class="search-popup">
+    <h2 class="search-popup__header">Простой поиск</h2>
+    <form class="search-popup__form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <input class="search-popup-text" id="search" type="text" name="search-form" placeholder="Крем-брюле">
+      </p>
+    </form>
+  </section>
+
+  <!--Попап-форма обратной связи-->
+  <section class="feedback-popup">
+    <button type="button">Закрыть</button>
+    <h2 class="feedback-popup__header">Мы вам обязательно ответим</h2>
+    
+    <form class="feedback__form" method="post" action ="https://echo.htmlacademy.ru">
+      <fieldset>
+        <label for="user-name">Имя</label>
+        <input class="text-field" id="user-name" type="text" name="username" placeholder="Имя Фамилия">
+        <label for="user-email">Почта</label>
+        <input class="text-field" id="user-email" type="email" name="email" placeholder="email@example.com">
+        <label for="user-message">Сообщение</label>
+        <textarea class="text-field" name="user-message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <button class="button feedback__submit-button" type="submit">Отправить</button>
+      </fieldset>
+    
+    </form>
+  </section>
   </body>
 </html>

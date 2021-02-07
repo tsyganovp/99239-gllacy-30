@@ -10,11 +10,7 @@
   --link-visited:#D07058; 
 
   --main-font: "Roboto", "Arial", sans-serif;
-  font-family: var(--main-font);
-    color: var(--white-text-color);
-    font-style: normal;
-    font-weight: normal;
-
+  
 }
 @font-face {
     font-family: "Roboto";
@@ -51,12 +47,17 @@
   }
 .main-body {
     min-height: 100%;
-    
-
     min-width: 1200px;
     background: var(--index-first-background);
     margin: 0;
     padding: 0;
+
+    font-family: var(--main-font);
+    color: var(--white-text-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 24px;
 }
 .link:hover {
     color: #FFBC9E;
@@ -88,7 +89,6 @@
 .main-nav__link {
     color: var(--white-text-color);
     text-decoration: none;
-    font-size: 16px;
     line-height: 18px;
 }
 .user-icons {
@@ -115,7 +115,6 @@
     color: var(--white-text-color);
     text-decoration: none;
     font-size: 22px;
-    line-height: 24px;
 }
 .main {
     
@@ -219,7 +218,6 @@
 
 .about-us__text {
     color: var(--dark-text-color);
-    font-size: 16px;
     line-height: 22px;
 }
 .addition-information
@@ -232,7 +230,6 @@
 .blog-section__text {
     color: var(--dark-text-color);
     font-weight: 500;
-    font-size: 16px;
     line-height: 22px;
 }
 .blog-section__header {
@@ -254,8 +251,6 @@
     
 .emailer-field {
     color: var(--dark-text-color);
-    font-size: 16px;
-    line-height: 24px;
 }
 .map {
     background:grey url(../img/backgrounds/map.jpg);
@@ -282,7 +277,6 @@
     color: var(--white-text-color);
     background: var(--button-background);
     font-size: 18px;
-    line-height: 24px;
     letter-spacing: 0.05em;
     text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
@@ -306,7 +300,6 @@
 .contacts__phone a {
     color: var(--dark-text-color);
     font-size: 18px;
-    line-height: 24px;
     text-decoration: none;
 }
 .copyright-link {
@@ -338,8 +331,12 @@
 .footer__link--bold {
     font-weight: bold;
 }
-.copyright__text {
+.copyright__link
+{
     color: var(--white-text-color);
+    text-decoration: none;
+}
+.copyright__text {
     font-size: 12px;
     line-height: 18px;
 }
@@ -373,7 +370,6 @@
 .catalog-calories {
     color: var(--white-text-color);
     font-weight: 500;
-    font-size: 16px;
     line-height: 18px;
 }
 
@@ -388,12 +384,10 @@
     color: var(--white-text-color);
     background: var(--button-background);
     font-size: 18px;
-    line-height: 24px;
 }
 .paginator__link {
     color: var(--white-text-color);
     font-weight: 500;
-    font-size: 16px;
     line-height: 18px;
     text-decoration: none;
 }
@@ -427,7 +421,6 @@
 }
 .feedback__form label {
     color: var(--dark-text-color);
-    font-size: 16px;
     line-height: 20px;
 }
 .cart-preview {
@@ -489,6 +482,5 @@
     border: 2px solid rgba(46, 136, 228, 0.52);
     font-family: var(--main-font);
     font-weight: bold;
-    font-size: 16px;
     line-height: 20px;
 }
