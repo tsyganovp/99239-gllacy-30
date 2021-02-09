@@ -354,6 +354,7 @@
 }
 .catalog-breadcrumbs {
     list-style: none;
+    display: flex;
 }
 .catalog-breadcrumbs__breadcrumb a {
     color: var(--white-text-color);
@@ -366,12 +367,35 @@
     font-size: 35px;
     line-height: 41px;
 }
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+}
 .filter-text {
     color: var(--white-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 }
+.filter__price {
+    width: 216px;
+}
+.filter-sorting {
+    width: 196px;
+}
+.filter-calories {
+    width: 425px;
+}
+.filter-calories ul {
+    display: flex;
+}
+.filter-filler {
+    width: 711px;
+}
+.filter-filler ul {
+    display: flex;
+}
+
 .catalog-sorting {
     background: var(--form-background);
     color: var(--white-text-color);
@@ -388,9 +412,18 @@
 .filter__submit-btn {
     background: var(--form-background);
     text-shadow:none;
+    /*width: 114px;*/
 }
 .catalog-list {
     list-style: none;
+    display: grid;
+    grid-template-columns: 267px 267px 267px 267px;
+    gap: 26px;
+}
+.catalog__paginator {
+    justify-content: flex-end;
+    list-style: none;
+    display: flex;
 }
 .item__button {
     color: var(--white-text-color);
