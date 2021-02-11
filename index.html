@@ -17,7 +17,7 @@
 <body class="main-body">
   <h1 class="visually-hidden">Магазин мороженного</h1>
   <header class="main-header">
-    <a><img class="main-header__logo" src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
+    <a class="main-header__logo"><img src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
     
     <nav class = "main-nav">
       <ul class="main-nav__list">
@@ -28,9 +28,9 @@
     </nav>
 
     <ul class="user-icons">
-      <li class="user-icons__icon user-icons__search"><button><img src="img/icons/search.svg" width="16" height="16" alt="">Поиск</button></li>
-      <li class="user-icons__icon user-icons__enter"><a href="#"><img src="img/icons/enter.svg" width="20" height="19" alt="">Вход</a></li>
-      <li class="user-icons__icon user-icons__cart"><a href="#"><img src="img/icons/cart.svg" width="21" height="20" alt="">Корзина</a></li>
+      <li class="user-icons__icon user-icons__search"><button><!--<img class="user-icons__search-image" src="img/icons/search.svg" width="16" height="16" alt="">--><span class="visually-hidden">Поиск</span></button></li>
+      <li class="user-icons__icon user-icons__enter"><a href="#"><!--<img src="img/icons/enter.svg" width="20" height="19" alt="">--><span class="user-icons__enter-text">Вход</span></a></li>
+      <li class="user-icons__icon user-icons__cart"><a href="#"><!--<img src="img/icons/cart.svg" width="21" height="20" alt="">--><span class="user-icons__cart-text">Корзина</span></a></li>
     </ul>
 
     <div class="work-time">
@@ -43,25 +43,25 @@
   <main class="main">
 
     <section class="main-slider">
-      <div class="slider__img-container">
+      <div class="slider__img-container slider__img-container--one">
         <h2 class="main-slider__promo-text">Крем-брюле и пломбир с малиновым джемом</h2>
         <img src="img/icecream-1.png" alt="Мороженное крем-брюле и пломбир с малиновым джемом">
         <button class="button main-slider__promo-button">Давайте оба!</button>
       </div>
-      <div class="slider__img-container">
-        <h2 class="main-slider__promo-text">Шоколадный пломбир и лимонный сорбет</h2>
+      <div class="slider__img-container slider__img-container--two visually-hidden">
+        <h2 class="main-slider__promo-text ">Шоколадный пломбир и лимонный сорбет</h2>
         <img src="img/icecream-2.png" alt="Мороженное Шоколадный пломбир и лимонный сорбет">
         <button class="button main-slider__promo-button">Давайте оба!</button>
       </div>
-      <div class="slider__img-container">
+      <div class="slider__img-container slider__img-container--three visually-hidden">
         <h2 class="main-slider__promo-text">Пломбир с помадкой и клубничный щербет</h2>
         <img src="img/icecream-3.png" alt="Мороженное Пломбир с помадкой и клубничный щербет">
         <button class="button main-slider__promo-button">Давайте оба!</button>
       </div>
       <div class="slider-icons">
-        <span class="slider-icons__icon">/</span>
-        <span class="slider-icons__icon">/</span>
-        <span class="slider-icons__icon">/</span>
+        <span class="slider-icons__icon"></span>
+        <span class="slider-icons__icon"></span>
+        <span class="slider-icons__icon"></span>
       </div>
     </section>
 
@@ -89,35 +89,31 @@
       <ul>
 
         <li class="catalog__item catalog__item--orange">
-          <img src="img/hits/hit-1.jpg" width="267" height="267" alt="Мороженное апельсиновое">
+          <img class="catalog__image" src="img/hits/hit-1.jpg" width="267" height="267" alt="Мороженное апельсиновое">
           <p class="item__price"><span class ="price__big">310 ₽</span>/кг</p>
           <p class="item__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <img src="img/hits/hit-text.svg" width="34" height="27" alt="">
-          <span>Хит!</span>
+          <span class="hit"><img src="img/hits/hit-text.svg" width="34" height="27" alt=""></span>
         </li>
 
         <li class="catalog__item catalog__item--coffee">
-          <img src="img/hits/hit-2.jpg" width="267" height="267"  alt="Мороженное кофейное">
+          <img class="catalog__image" src="img/hits/hit-2.jpg" width="267" height="267"  alt="Мороженное кофейное">
           <p class="item__price"><span class ="price__big">380 ₽</span>/кг</p>
           <p class="item__text">Сливочно-кофейное с кусочками шоколада</p>
-          <img src="img/hits/hit-text.svg" width="34" height="27" alt="">
-          <span>Хит!</span>
+          <span class="hit"><img src="img/hits/hit-text.svg" width="34" height="27" alt=""></span>
         </li>
 
         <li class="catalog__item catalog__item--berry">
-          <img src="img/hits/hit-3.jpg" width="267" height="267"  alt="Мороженное клубничное">
+          <img class="catalog__image" src="img/hits/hit-3.jpg" width="267" height="267"  alt="Мороженное клубничное">
           <p class="item__price"><span class ="price__big">355 ₽</span>/кг</p>
           <p class="item__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <img src="img/hits/hit-text.svg" width="34" height="27" alt="">
-          <span>Хит!</span>
+          <span class="hit"><img src="img/hits/hit-text.svg" width="34" height="27" alt=""></span>
         </li>
 
         <li class="catalog__item catalog__item--brule">
-          <img src="img/hits/hit-4.jpg" width="267" height="267"  alt="Мороженное крем-брюле">
+          <img class="catalog__image" src="img/hits/hit-4.jpg" width="267" height="267"  alt="Мороженное крем-брюле">
           <p class="item__price"><span class ="price__big">415 ₽</span>/кг</p>
           <p class="item__text">Сливочное крем-брюле с карамельной подливкой </p>
-          <img src="img/hits/hit-text.svg" width="34" height="27" alt="">
-          <span>Хит!</span>
+          <span class="hit"><img src="img/hits/hit-text.svg" width="34" height="27" alt=""></span>
         </li>
 
       </ul>
