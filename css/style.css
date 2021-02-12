@@ -90,18 +90,23 @@
     margin-top: 9px;
     margin-left: 27px;
     margin-right: 24px;
-
+/*
+    padding-top: 9px;
+    padding-left: 27px;
+*/
 }
 .main-header a {
+    
     width: 155px;
 }
 .main-nav {
     width: 700px;  
 }
 .main-nav ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
     margin-top: 32px;
+    margin-left: 54px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -116,6 +121,8 @@
     margin-right: 0;
 }
 .main-nav__link {
+    padding: 0;
+    margin-right: 32px;
     color: var(--white-text-color);
     text-decoration: none;
 }
@@ -424,8 +431,31 @@
 }
 
 .about-us__text {
+    margin-left: 75px;
     color: var(--dark-text-color);
     line-height: 22px;
+}
+.about-us__text:before {
+    position: absolute;
+    content: "";
+    width: 49px;
+    height: 49px;
+}
+.about-us__header--icon-1 {
+    background: url(../img/icons/about-us-1.svg) no-repeat;
+    left: 50px;
+}
+.about-us__header--icon-2 {
+    background: url(../img/icons/about-us-2.svg) no-repeat;
+    left: 50px;
+}
+.about-us__header--icon-3 {
+    background: url(../img/icons/about-us-3.svg) no-repeat;
+    left: 100px;
+}
+.about-us__header--icon-4 {
+    background: url(../img/icons/about-us-4.svg) no-repeat;
+    left: 100px;
 }
 .addition-information
 {
