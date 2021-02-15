@@ -171,7 +171,9 @@
 
     <section class="map">
       <h2 class="map__header visually-hidden">Как к нам проехать</h2>
+      
       <img src="img/pointer.svg" alt="Курсор карты" class="map__pointer">
+      <iframe class="frame-map" src="https://yandex.ru/map-widget/v1/-/CCUMnNd5~C" width="1200" height="430" style="position:relative;"></iframe>
       <div class="map__contacts">
         <h2 class="contacts__header">Контакты</h2>
         <p class="contacts__top-text">Адрес главного офиса<br> и офлайн-магазина:<br><span class="top-text-big">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
@@ -187,10 +189,10 @@
   <footer class="page-footer">
 
     <ul class="socio-block">
-      <li class="socio-block__link"><a href="#">Facebook<img src="img/icons/facebook.svg" alt=""></a></li>
-      <li class="socio-block__link"><a href="#">Vkontakte<img src="img/icons/vkontakte.svg" alt=""></a></li>
-      <li class="socio-block__link"><a href="#">Instagram<img src="img/icons/insta.svg" alt=""></a></li>
-      <li class="socio-block__link"><a href="#">Twitter<img src="img/icons/twitter.svg" alt=""></a></li>
+      <li class="socio-block__link"><a href="#"><img src="img/icons/facebook.svg" alt=""></a></li>
+      <li class="socio-block__link"><a href="#"><img src="img/icons/vkontakte.svg" alt=""></a></li>
+      <li class="socio-block__link"><a href="#"><img src="img/icons/insta.svg" alt=""></a></li>
+      <li class="socio-block__link"><a href="#"><img src="img/icons/twitter.svg" alt=""></a></li>
     </ul>
 
     <ul class="footer__links">
@@ -213,34 +215,37 @@
 
   <!--Выпадающее меню-->
   <section class="main-nav__dropdown">
-    <h2 class="dropdown__header">Выпадающее меню</h2>
+    <h2 class="dropdown__header visually-hidden">Выпадающее меню</h2>
 
-    <ul>
-      <li class="dropdown__link dropdown__link--bold">Новинки</li>
-      <li class="dropdown__link"><a href="catalog.html">Сливочное</a></li>
-      <li class="dropdown__link">Щербеты</li>
-      <li class="dropdown__link">Фруктовый лед</li>
-      <li class="dropdown__link">Мелорин</li>
+    <ul class="dropdown__list">
+      <li><a class="dropdown__link dropdown__link--bold" href="#">Новинки</a></li>
+      <li><a class="dropdown__link" href="catalog.html">Сливочное</a></li>
+      <li><a class="dropdown__link" href="#">Щербеты</a></li>
+      <li><a class="dropdown__link" href="#">Фруктовый лед</a></li>
+      <li><a class="dropdown__link" href="#">Мелорин</a></li>
     </ul>
   </section>
 
 
    <!--Логин попап-->
   <section class="login-popup">
-    <h2 class="login-popup__header">Форма фхода</h2>
+    <h2 class="login-popup__header visually-hidden">Форма входа</h2>
     
     <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label for="login-login">Логин</label>
+        <!--<label for="login-login">Логин</label>-->
         <input class ="login-popup-email" id="login-login" type="email" name="login" placeholder="email@example.com">
       </p>
       <p>
-        <label for="login-password">Пароль</label>
-        <input class="text-field" id="login-password" type="password" name="password" placeholder="••••••">
-        <button class="button" type="submit">Войти</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
+        <!--<label for="login-password">Пароль</label>-->
+        <input class="login-popup-text-field" id="login-password" type="password" name="password" placeholder="••••••">
       </p>
+        <button class="button login-button" type="submit">Войти</button>
+        <div>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </div>
+
     
     </form>
   </section> 
