@@ -16,27 +16,25 @@
 
   <body class="main-body">
     <header class="main-header">
-      <a href="index.html"><img class="main-header__logo" src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
+      <a class="main-header__logo"><img src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
       
       <nav class = "main-nav">
-        <ul>
-          <li><a class="main-nav__link" href="catalog.html">Каталог</a></li>
-          <li><a class="main-nav__link" href="#">Доставка и оплата</a></li>
-          <li><a class="main-nav__link" href="#">О компании</a></li>   
+        <ul class="main-nav__list">
+          <li><a class="link main-nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class=" link main-nav__link" href="#">Доставка и оплата</a></li>
+          <li><a class=" link main-nav__link" href="#">О компании</a></li>   
         </ul>          
-      
       </nav>
-      
+  
       <ul class="user-icons">
-        <li class="user-icons__icon user-icons__search"><button><img src="img/icons/search.svg" width="16" height="16" alt="">Поиск</button></li>
-        <li class="user-icons__icon user-icons__enter"><a href="#"><img src="img/icons/enter.svg" width="20" height="19" alt="">Вход</a></li>
-        <li class="user-icons__icon user-icons__cart"><a href="#"><img src="img/icons/cart.svg" width="21" height="20" alt="">Корзина</a></li>
+        <li class="user-icons__icon user-icons__search"><button><!--<img class="user-icons__search-image" src="img/icons/search.svg" width="16" height="16" alt="">--><span class="visually-hidden">Поиск</span></button></li>
+        <li class="user-icons__icon user-icons__enter"><a href="#"><!--<img src="img/icons/enter.svg" width="20" height="19" alt="">--><span class="user-icons__enter-text">Вход</span></a></li>
+        <li class="user-icons__icon user-icons__cart"><a href="#"><!--<img src="img/icons/cart.svg" width="21" height="20" alt="">--><span class="user-icons__cart-text">Корзина</span></a></li>
       </ul>
-      
+  
       <div class="work-time">
         <p class = "work-time__text">с 10 до 20, ежедневно</p>
         <p class = "work-time__phone"><a href="tel:+78124502525">8 812 450-25-25</a></p>
-      
       </div> 
     </header>
     
