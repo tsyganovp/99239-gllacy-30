@@ -71,7 +71,7 @@
       <article class="promo-catalog__promo-block raspberry-bg">
         <h2 class="promo-block__header">Малинка даром!</h2>
         <p class="promo-block__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button class="button button promo-block__button">Хочу варенье!</button>
+        <button class="button promo-block__button promo-block__button--raspberry">Хочу варенье!</button>
       </article>
 
       <article class="promo-catalog__promo-block chocolate-bg">
@@ -156,8 +156,9 @@
   
       <div class="emailer">
         <h2 class="emailer__header visually-hidden">Подписка на рассылку</h2>
-        <p class="emailer__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        
         <form class = "emailer__form" action="https://echo.htmlacademy.ru">
+          <p class="emailer__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить <br> и не слать всякой ненужной ерунды. Честно =)</p>
           <label for="emailer__email-field">
             <input class="emailer-field" type="text" name="email-field" id="emailer__email-field" placeholder="email@example.com">
           </label>
@@ -175,8 +176,8 @@
       <img src="img/pointer.svg" alt="Курсор карты" class="map__pointer">
       <iframe class="frame-map" src="https://yandex.ru/map-widget/v1/-/CCUMnNd5~C" width="1200" height="430" style="position:relative;"></iframe>
       <div class="map__contacts">
-        <h2 class="contacts__header">Контакты</h2>
-        <p class="contacts__top-text">Адрес главного офиса<br> и офлайн-магазина:<br><span class="top-text-big">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
+        <h2 class="contacts__header visually-hidden">Контакты</h2>
+        <p class="contacts__top-text">Адрес главного офиса<br> и офлайн-магазина:<br><span class="top-text-big">ул. Большая Конюшенная,<br> 19/8, Санкт-Петербург</span></p>
         <p class="contacts__bottom-text">Для заказов по телефону:<br><span class = "contacts__phone"><a href="tel:+78124502525">8 812 450-25-25</a></span><br>(с 10 до 20 ежедневно)</p>
         <a href="#" class="button map__contacts-button"><p>Форма обратной связи</p></a>
       </div>
@@ -202,12 +203,12 @@
       <li><a class="link  footer__link" href="#">Экологические стандарты</a></li>
     </ul>
 
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-      <div class="footer__copyright">
+    <div class="footer__copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/academy-logo.svg" width="108" height="39" alt="" class="copyright__logo">
         <p class="copyright__text">Сделано в HTML Academy © 2019</p>
-      </div>
-    </a>
+      </a>
+    </div>
 
   </footer>
   
