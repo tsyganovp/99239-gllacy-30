@@ -855,12 +855,12 @@
     /*width: 114px;*/
 }
 .catalog-list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 267px 267px 267px 267px;
-    gap: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .catalog__paginator {
+    margin-top: 60px;
     justify-content: flex-end;
     list-style: none;
     display: flex;
