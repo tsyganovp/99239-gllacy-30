@@ -29,7 +29,7 @@
       <ul class="user-icons">
         <li class="user-icons__icon user-icons__search"><button><!--<img class="user-icons__search-image" src="img/icons/search.svg" width="16" height="16" alt="">--><span class="visually-hidden">Поиск</span></button></li>
         <li class="user-icons__icon user-icons__enter"><a href="#"><!--<img src="img/icons/enter.svg" width="20" height="19" alt="">--><span class="user-icons__enter-text">Вход</span></a></li>
-        <li class="user-icons__icon user-icons__cart"><a href="#"><!--<img src="img/icons/cart.svg" width="21" height="20" alt="">--><span class="user-icons__cart-text">Корзина</span></a></li>
+        <li class="user-icons__icon user-icons__cart user-icons__cart--catalog"><a href="#"><!--<img src="img/icons/cart.svg" width="21" height="20" alt="">--><span class="user-icons__cart-text">2 товара</span></a></li>
       </ul>
   
       <div class="work-time">
@@ -39,9 +39,9 @@
     </header>
     
     
-    <main>
+    <main class="main main-catalog">
         <ul class="catalog-breadcrumbs">
-            <li class="catalog-breadcrumbs__breadcrumb"><a class="link" href="index.html">Главная</a>a</li>
+            <li class="catalog-breadcrumbs__breadcrumb"><a class="link" href="index.html">Главная</a></li>
             <li class="catalog-breadcrumbs__breadcrumb"><a class="link" href="catalog.html">Каталог</a></li>
             <li class="catalog-breadcrumbs__breadcrumb"><a class="link" href="catalog.html">Сливочное</a></li>
         </ul>
@@ -49,7 +49,7 @@
         <h2 class="page-header-text">Сливочное мороженое</h2>
         
         <section class="filter">
-          <h3 class="filter__header">Поисковый фильтр</h3>
+          <h3 class="filter__header visually-hidden">Поисковый фильтр</h3>
 
           <form action="https://echo.htmlacademy.ru" method="get" class="filter-form">
             <fieldset class ="filter-sorting filter-text">
@@ -296,44 +296,47 @@
       <p class="cart-preview__summary-text">Итого:<span class="cart-preview__summary-price">750 руб.</span></p>
       <button class="button cart-preview__submit-button" type="submit">Оформить заказ</button>
     </article>
-     <!--Выпадающее меню-->
-  <section class="main-nav__dropdown">
-    <h2 class="dropdown__header">Выпадающее меню</h2>
+   <!--Выпадающее меню-->
+   <section class="main-nav__dropdown">
+    <h2 class="dropdown__header visually-hidden">Выпадающее меню</h2>
 
-    <ul>
-      <li class="dropdown__link dropdown__link--bold">Новинки</li>
-      <li class="dropdown__link"><a href="catalog.html">Сливочное</a></li>
-      <li class="dropdown__link">Щербеты</li>
-      <li class="dropdown__link">Фруктовый лед</li>
-      <li class="dropdown__link">Мелорин</li>
+    <ul class="dropdown__list">
+      <li><a class="dropdown__link dropdown__link--bold" href="#">Новинки</a></li>
+      <li><a class="dropdown__link" href="catalog.html">Сливочное</a></li>
+      <li><a class="dropdown__link" href="#">Щербеты</a></li>
+      <li><a class="dropdown__link" href="#">Фруктовый лед</a></li>
+      <li><a class="dropdown__link" href="#">Мелорин</a></li>
     </ul>
   </section>
 
 
-  <!--Логин попап-->
+   <!--Логин попап-->
   <section class="login-popup">
-    <h2 class="login-popup__header">Форма фхода</h2>
+    <h2 class="login-popup__header visually-hidden">Форма входа</h2>
     
     <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label for="login-login">Логин</label>
+        <label for="login-login" class="visually-hidden">Логин</label>
         <input class ="login-popup-email" id="login-login" type="email" name="login" placeholder="email@example.com">
       </p>
       <p>
-        <label for="login-password">Пароль</label>
-        <input class="text-field" id="login-password" type="password" name="password" placeholder="••••••">
-        <button class="button" type="submit">Войти</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
+        <label for="login-password" class="visually-hidden">Пароль</label>
+        <input class="login-popup-text-field" id="login-password" type="password" name="password" placeholder="••••••">
       </p>
+        <button class="button login-button" type="submit">Войти</button>
+        <div>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </div>
+
     
     </form>
   </section> 
 
 
-  <!--Попап-поиска-->
+   <!--Попап-поиска-->
   <section class="search-popup">
-    <h2 class="search-popup__header">Простой поиск</h2>
+    <h2 class="search-popup__header visually-hidden">Простой поиск</h2>
     <form class="search-popup__form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <input class="search-popup-text" id="search" type="text" name="search-form" placeholder="Крем-брюле">
@@ -341,24 +344,24 @@
     </form>
   </section>
 
-  <!--Попап-форма обратной связи-->
+   <!--Попап-форма обратной связи-->
   <section class="feedback-popup">
-    <button type="button">Закрыть</button>
+    <!--<button type="button">Закрыть</button>-->
     <h2 class="feedback-popup__header">Мы вам обязательно ответим</h2>
     
     <form class="feedback__form" method="post" action ="https://echo.htmlacademy.ru">
       <fieldset>
-        <label for="user-name">Имя</label>
+        <label for="user-name" class="visually-hidden">Имя</label>
         <input class="text-field" id="user-name" type="text" name="username" placeholder="Имя Фамилия">
-        <label for="user-email">Почта</label>
+        <label for="user-email" class="visually-hidden">Почта</label>
         <input class="text-field" id="user-email" type="email" name="email" placeholder="email@example.com">
-        <label for="user-message">Сообщение</label>
-        <textarea class="text-field" name="user-message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <label for="user-message" class="visually-hidden">Сообщение</label>
+        <textarea class="text-field text-field--message" name="user-message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         <button class="button feedback__submit-button" type="submit">Отправить</button>
       </fieldset>
     
     </form>
   </section>
 
-  </body>
+</body>
 </html>
