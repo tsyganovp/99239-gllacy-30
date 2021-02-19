@@ -71,8 +71,21 @@
               <legend>
                 Цена: 100 ₽ – 500 ₽
               </legend>
-              <input type="range" id="catalog-price" name="price" min="100" max="500">
-              <label for="catalog-price">Цена: 100 ₽ – 500 ₽</label>
+              <div class="filter-price__range-filter">
+                <div class="filter-price__range-controls">
+                  <div class="range-controls__scale">
+                    <div class="range-controls__bar" style="
+                    width: 50%;
+                    margin-left: 20%
+                  "></div>
+                  </div>
+                  <div class="range-controls__toggle range-controls__toggle-min" tabindex="0" style="
+                  left: 15%"></div>
+                  <div class="range-controls__toggle range-controls__toggle-max" tabindex="0" style="
+                  left: 60%"></div>
+                </div>
+              </div>
+              <!--<label for="catalog-price">Цена: 100 ₽ – 500 ₽</label>-->
             </fieldset>
 
             <fieldset class="filter-calories filter-text">

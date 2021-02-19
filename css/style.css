@@ -899,7 +899,57 @@
     font-weight: 500;
     line-height: 18px;
 }
-
+.filter-price {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.filter-price legend {
+    padding-left: 19px;
+}
+.filter-price__range-filter {
+    margin-top: 5px;
+}
+.filter-price__range-controls {
+    position: relative;
+    margin-left: 3px;
+    padding-top: 17px;
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 176px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.range-controls__scale {
+    
+    width: 176px;
+    height: 2px;
+    background-color:rgba(248, 247, 244, 0.5);
+}
+.range-controls__bar {
+    width: 70%;
+    height: 2px;
+    background-color:#F8F7F4;
+}
+.range-controls__toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    width: 5px;
+    height: 4px;
+    padding: 0;
+    background: #ABABAB;
+    border: 8px solid white;
+    border-radius: 50%;
+}
+.range-controls__toggle-min {
+    left: 33px;
+}
+.range-controls__toggle-max {
+    right: 67px;
+}
 .filter__submit-btn {
     color: var(--white-text-color);
     background: var(--form-background);
