@@ -412,17 +412,18 @@
 }
 .item__price {
     margin: 0;
-    margin-top: 36px;
+    margin-top: 32px;
     position: absolute;
     left: 0;
     top: 175px;
     font-weight: bold;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 34px;
     text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 .item__text {
-    margin-top: 7px;
+    display: block;
+    margin-top: 5px;
     text-align: center;
     
     font-style: normal;
@@ -830,7 +831,7 @@
 }
 .filter {
     margin-top: 29px;
-    margin-left: 30px;
+    margin-left: 14px;
 }
 .filter-form {
     display: flex;
@@ -851,6 +852,9 @@
 .filter-sorting {
     width: 196px;
 }
+.filter-sorting legend {
+    padding-left: 16px;
+}
 .filter-calories {
     width: 425px;
 }
@@ -864,12 +868,31 @@
     display: flex;
 }
 
-.catalog-sorting {
+.catalog-sorting select {
     background: var(--form-background);
     color: var(--white-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+    appearance: none;
+    width: 196px;
+    border: none;
+    border-radius: 18px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+}
+.catalog-sorting {
+    position: relative;
+}
+.catalog-sorting::after {
+    position: absolute;
+    content: "";
+    background: url(../img/sorting-arrow.svg) no-repeat;
+    width: 11px;
+    height: 10px;
+    top: 14px;
+    right: 14px;
 }
 .catalog-calories {
     color: var(--white-text-color);
@@ -899,12 +922,43 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    row-gap: 37px;
+}
+.catalog-list:last-child {
+    row-gap: 0;
 }
 .catalog__paginator {
-    margin-top: 60px;
+    position: relative;
+    padding-top: 60px;
+    padding-right: 53px;
+    padding-bottom: 11px;
     justify-content: flex-end;
     list-style: none;
     display: flex;
+}
+.paginator__link-block {
+    margin-left: 4px;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+}
+.paginator__link-block:first-child::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 12px;
+    top: 65px;
+    right:213px;
+    background: url(../img/icon-left-small.svg) no-repeat;
+}
+.paginator__link-block:last-child::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 12px;
+    top: 65px;
+    right: 27px;
+    background: url(../img/icon-right-small.svg) no-repeat;
 }
 .item__button {
     color: var(--white-text-color);
@@ -917,6 +971,7 @@
     line-height: 18px;
     text-decoration: none;
 }
+
 /* Попапы*/
 .login-popup {
     background: #F8F7F4;
