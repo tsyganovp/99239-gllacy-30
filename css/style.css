@@ -836,6 +836,7 @@
 .filter-form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 .filter-form fieldset {
     border: none;
@@ -858,15 +859,11 @@
 .filter-calories {
     width: 425px;
 }
-.filter-calories ul {
-    display: flex;
-}
+
 .filter-filler {
     width: 711px;
 }
-.filter-filler ul {
-    display: flex;
-}
+
 
 .catalog-sorting select {
     background: var(--form-background);
@@ -950,7 +947,105 @@
 .range-controls__toggle-max {
     right: 67px;
 }
+.filter-calories {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select:none;
+}
+.filter-calories legend {
+    padding-left: 17px;
+}
+.filter-calories ul {
+    width: 386px;
+    height: 27px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;    
+    margin: 0;
+    padding-top: 9px;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-calories li {
+    position: relative;
+    list-style: none;
+}
+.filter-calories__checkbox + label::before {
+    position: absolute;
+    right:23px;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+.filter-calories__checkbox:checked + label::after{
+    position: absolute;
+    top: 5px;
+    right: 28px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+.calories__span {
+    padding-right: 1px;
+}
+.filter-filler {
+    padding: 0;
+    padding: 0;
+}
+.filter-filler ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 12px;
+    margin-top: 6px;
+    width: 710px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.filter-filler li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.filter-filler label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+.filter-filler__filler-checkbox + label:before {
+    position: absolute;
+    content:"";
+    width: 24px;
+    height: 20px;
+    background: url(../img/checkbox-off.svg) no-repeat;
+}
+.filter-filler__filler-checkbox:checked + label::after {
+    position: absolute;
+    left:0px;
+    content:"";
+    width: 24px;
+    height: 20px;
+    background: url(../img/checkbox-on.svg) no-repeat;
+}
 .filter__submit-btn {
+    margin-top: 24px;
+    margin-left: 12px;
     color: var(--white-text-color);
     background: var(--form-background);
     text-shadow:none;
