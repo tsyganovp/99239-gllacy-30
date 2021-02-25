@@ -144,7 +144,7 @@
           
           
           <li class="about-us__block">
-            <p class="about-us__text about-us__text--icon-4">Доставка нашего мороженого до заказчиков осуществляется <br> в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p> 
+            <p class="about-us__text about-us__text--icon-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p> 
           </li>
         
         </ul>
@@ -241,11 +241,11 @@
     <h2 class="login-popup__header visually-hidden">Форма входа</h2>
     
     <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="login-p">
         <label for="login-login" class="visually-hidden">Логин</label>
         <input class ="login-popup-email" id="login-login" type="email" name="login" placeholder="email@example.com">
       </p>
-      <p>
+      <p class="password-p">
         <label for="login-password" class="visually-hidden">Пароль</label>
         <input class="login-popup-text-field" id="login-password" type="password" name="password" placeholder="••••••">
       </p>
@@ -273,8 +273,8 @@
    <!--Попап-форма обратной связи-->
   <section class="feedback-popup">
     <!--<button type="button">Закрыть</button>-->
-    <h2 class="feedback-popup__header">Мы вам обязательно ответим</h2>
-    
+    <h2 class="feedback-popup__header">Мы обязательно вам ответим!</h2>
+    <button class="feedback-popup-close"><img src="img/x-big.svg" alt=""></button>
     <form class="feedback__form" method="post" action ="https://echo.htmlacademy.ru">
       <fieldset>
         <label for="user-name" class="visually-hidden">Имя</label>
@@ -282,12 +282,40 @@
         <label for="user-email" class="visually-hidden">Почта</label>
         <input class="text-field" id="user-email" type="email" name="email" placeholder="email@example.com">
         <label for="user-message" class="visually-hidden">Сообщение</label>
-        <textarea class="text-field text-field--message" name="user-message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea class="text-field text-field--message" name="user-message" id="user-message" cols="30" rows="7" placeholder="В свободной форме"></textarea>
         <button class="button feedback__submit-button" type="submit">Отправить</button>
       </fieldset>
     
     </form>
   </section>
+  <script>
+  
+    var loginLink = document.querySelector(".user-icons__enter");
+    var loginModal = document.querySelector(".login-popup");
+      loginLink.addEventListener("click",function() {
+      event.preventDefault();
+      loginModal.classList.toggle("login-popup--show");
+    });
 
+    var searchLink = document.querySelector(".user-icons__search");
+    var searchModal = document.querySelector(".search-popup");
+    searchLink.addEventListener("click",function() {
+      event.preventDefault();
+      searchModal.classList.toggle("search-popup--show");
+    });
+
+    var modalLink = document.querySelector(".map__contacts-button");
+    var feedbackModal = document.querySelector(".feedback-popup");
+    var closeModalBtn = document.querySelector(".feedback-popup-close");
+
+    modalLink.addEventListener("click",function() {
+      event.preventDefault();
+      feedbackModal.classList.add("feedback-popup--show");
+    });
+    closeModalBtn.addEventListener("click",function () {
+      event.preventDefault();
+      feedbackModal.classList.remove("feedback-popup--show");
+    });
+</script>
 </body>
 </html>
