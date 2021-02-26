@@ -293,28 +293,28 @@
 
     <!--Таблица корзины-->
     <article class="cart-preview">
-      <h2 class="cart-preview__header">Предпросмотр корзины</h2>
+      <h2 class="cart-preview__header visually-hidden">Предпросмотр корзины</h2>
       
-      <table class="cart-preview-table">
-        <tr>
-          <th><button type="submit">Закрыть</button></th>
-          <th><figure><img src="img/catalog/catalog-1.jpg" width="33" height="33" alt="Изображение товара в корзине" class="cart-precview__image"></figure></th>
-          <th><p class="cart-preview__text">Пломбир с апельсиновым джемом</p></th>
-          <th><p class="cart-preview__kilos">1.5 кг<span class="cart-preview__price"> x 200 руб</span></p></th>
-          <th><p class="cart-preview__position-summary">300 руб</p></th>
-        </tr>
+      <section class="cart-preview-table">
+        <div class ="cart-preview-table-row">
+          <button type="submit" class="cart-preview-delete-btn"><img src="img/icons/cart-delete-btn.svg" width="11" height="11" alt=""></button>
+          <img src="img/catalog/catalog-1.jpg" width="33" height="33" alt="Изображение товара в корзине" class="cart-preview__image">
+          <p class="cart-preview-p cart-preview__text">Пломбир с апельсиновым джемом</p>
+          <p class="cart-preview-p cart-preview__kilos">1.5 кг<span class="cart-preview__price"> x 200 руб</span></p>
+          <p class="cart-preview-p cart-preview__position-summary">300 руб</p>
+        </div>
 
-        <tr>
-          <th><button class="button" type="submit">Закрыть</button></th>
-          <th><figure><img src="img/catalog/catalog-3.jpg" width="33" height="33" alt="Изображение товара в корзине" class="cart-precview__image"></figure></th>
-          <th><p class="cart-preview__text">Клубничный пломбир с присыпкой из белого шоколада</p></th>
-          <th><p class="cart-preview__kilos">1.5 кг<span class="cart-preview__price"> x 300 руб</span></p></th>
-          <th><p class="cart-preview__position-summary">450 руб</p></th>
-        </tr>
+        <div class ="cart-preview-table-row">
+          <button class="cart-preview-delete-btn" type="submit"><img src="img/icons/cart-delete-btn.svg" width="11" height="11" alt=""></button>
+          <img src="img/catalog/catalog-3.jpg" width="33" height="33" alt="Изображение товара в корзине" class="cart-preview__image">
+          <p class="cart-preview-p cart-preview__text">Клубничный пломбир с присыпкой из белого шоколада</p>
+          <p class="cart-preview-p cart-preview__kilos">1.5 кг<span class="cart-preview__price"> x 300 руб</span></p>
+          <p class="cart-preview-p cart-preview__position-summary">450 руб</p>
+        </div>
 
-      </table>
+      </section>
       
-      <p class="cart-preview__summary-text">Итого:<span class="cart-preview__summary-price">750 руб.</span></p>
+      <p class="cart-preview__summary-text">Итого: <span class="cart-preview__summary-price">750 руб.</span></p>
       <button class="button cart-preview__submit-button" type="submit">Оформить заказ</button>
     </article>
    <!--Выпадающее меню-->
