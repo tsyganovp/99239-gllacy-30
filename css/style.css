@@ -863,7 +863,7 @@ textarea:focus-within {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: var(--white-text-color);
 }
 .socio-block__link a {
     color: var(--white-text-color);
