@@ -26,7 +26,20 @@
             <li><a class="link main-nav__link catalog-link" href="catalog.html">Каталог</a></li>
             <li><a class=" link main-nav__link" href="#">Доставка и оплата</a></li>
             <li><a class=" link main-nav__link" href="#">О компании</a></li>   
-          </ul>          
+          </ul>  
+          
+          <section class="main-nav__dropdown">
+            <h2 class="dropdown__header visually-hidden">Выпадающее меню</h2>
+        
+            <ul class="dropdown__list">
+              <li><a class="dropdown__link dropdown__link--bold" href="#">Новинки</a></li>
+              <li><a class="dropdown__link" href="catalog.html">Сливочное</a></li>
+              <li><a class="dropdown__link" href="#">Щербеты</a></li>
+              <li><a class="dropdown__link" href="#">Фруктовый лед</a></li>
+              <li><a class="dropdown__link" href="#">Мелорин</a></li>
+            </ul>
+          </section>
+
         </nav>
     
         <ul class="user-icons">
@@ -51,17 +64,17 @@
         <div class="slider__img-container slider__img-container--one">
           <h2 class="main-slider__promo-text">Крем-брюле и пломбир <br> с малиновым джемом</h2>
           <img src="img/icecream-1.png" alt="Мороженное крем-брюле и пломбир с малиновым джемом">
-          <button class="button main-slider__promo-button">Давайте оба!</button>
+          <button class="button main-slider__promo-button round-btn">Давайте оба!</button>
         </div>
         <div class="slider__img-container slider__img-container--two visually-hidden">
           <h2 class="main-slider__promo-text ">Шоколадный пломбир и лимонный сорбет</h2>
           <img src="img/icecream-2.png" alt="Мороженное Шоколадный пломбир и лимонный сорбет">
-          <button class="button main-slider__promo-button">Давайте оба!</button>
+          <button class="button main-slider__promo-button round-btn">Давайте оба!</button>
         </div>
         <div class="slider__img-container slider__img-container--three visually-hidden">
           <h2 class="main-slider__promo-text">Пломбир с помадкой и клубничный щербет</h2>
           <img src="img/icecream-3.png" alt="Мороженное Пломбир с помадкой и клубничный щербет">
-          <button class="button main-slider__promo-button">Давайте оба!</button>
+          <button class="button main-slider__promo-button round-btn">Давайте оба!</button>
         </div>
         <div class="slider-icons">
           <span class="slider-icons__icon slider-icons__icon--1 slider-icons__icon--active"></span>
@@ -76,13 +89,13 @@
         <article class="promo-catalog__promo-block raspberry-bg">
           <h2 class="promo-block__header">Малинка даром!</h2>
           <p class="promo-block__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="button promo-block__button promo-block__button--raspberry">Хочу варенье!</button>
+          <button class="button promo-block__button promo-block__button--raspberry round-btn">Хочу варенье!</button>
         </article>
   
         <article class="promo-catalog__promo-block chocolate-bg">
           <h2 class="promo-block__header">Шоколадки даром!</h2>
           <p class="promo-block__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button class="button promo-block__button">Хочу шоколадки!</button>
+          <button class="button promo-block__button round-btn">Хочу шоколадки!</button>
         </article>
   
       </section>
@@ -168,7 +181,7 @@
               <input class="emailer-field" type="text" name="email-field" id="emailer__email-field" placeholder="email@example.com">
             </label>
             <label for="emailer__button">
-              <button class="button emailer__button" type="submit" id="emailer__button">Отправить</button>  
+              <button class="button emailer__button round-btn" type="submit" id="emailer__button">Отправить</button>  
             </label>
             </form>
         </div>
@@ -185,7 +198,7 @@
         <h2 class="contacts__header visually-hidden">Контакты</h2>
         <p class="contacts__top-text">Адрес главного офиса<br> и офлайн-магазина:<br><span class="top-text-big">ул. Большая Конюшенная,<br> 19/8, Санкт-Петербург</span></p>
         <p class="contacts__bottom-text">Для заказов по телефону:<br><span class = "contacts__phone"><a href="tel:+78124502525">8 812 450-25-25</a></span><br>(с 10 до 20 ежедневно)</p>
-        <a href="#" class="button map__contacts-button"><p>Форма обратной связи</p></a>
+        <a href="#" class="button map__contacts-button round-btn"><p>Форма обратной связи</p></a>
       </div>
     </section>
 
@@ -219,21 +232,6 @@
   
     </footer>
   </div>
-  
-  
-
-  <!--Выпадающее меню-->
-  <section class="main-nav__dropdown">
-    <h2 class="dropdown__header visually-hidden">Выпадающее меню</h2>
-
-    <ul class="dropdown__list">
-      <li><a class="dropdown__link dropdown__link--bold" href="#">Новинки</a></li>
-      <li><a class="dropdown__link" href="catalog.html">Сливочное</a></li>
-      <li><a class="dropdown__link" href="#">Щербеты</a></li>
-      <li><a class="dropdown__link" href="#">Фруктовый лед</a></li>
-      <li><a class="dropdown__link" href="#">Мелорин</a></li>
-    </ul>
-  </section>
 
 
    <!--Логин попап-->
@@ -259,16 +257,17 @@
     </form>
   </section> 
 
-
+ 
    <!--Попап-поиска-->
-  <section class="search-popup">
-    <h2 class="search-popup__header visually-hidden">Простой поиск</h2>
-    <form class="search-popup__form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <input class="search-popup-text" id="search" type="text" name="search-form" placeholder="Крем-брюле">
-      </p>
-    </form>
-  </section>
+
+    <section class="search-popup">
+      <h2 class="search-popup__header visually-hidden">Простой поиск</h2>
+      <form class="search-popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <input class="search-popup-text" id="search" type="text" name="search-form" placeholder="Крем-брюле">
+        </p>
+      </form>
+    </section>
 
    <!--Попап-форма обратной связи-->
   <section class="feedback-popup">
@@ -288,34 +287,6 @@
     
     </form>
   </section>
-  <script>
-  
-    var loginLink = document.querySelector(".user-icons__enter");
-    var loginModal = document.querySelector(".login-popup");
-      loginLink.addEventListener("click",function() {
-      event.preventDefault();
-      loginModal.classList.toggle("login-popup--show");
-    });
-
-    var searchLink = document.querySelector(".user-icons__search");
-    var searchModal = document.querySelector(".search-popup");
-    searchLink.addEventListener("click",function() {
-      event.preventDefault();
-      searchModal.classList.toggle("search-popup--show");
-    });
-
-    var modalLink = document.querySelector(".map__contacts-button");
-    var feedbackModal = document.querySelector(".feedback-popup");
-    var closeModalBtn = document.querySelector(".feedback-popup-close");
-
-    modalLink.addEventListener("click",function() {
-      event.preventDefault();
-      feedbackModal.classList.add("feedback-popup--show");
-    });
-    closeModalBtn.addEventListener("click",function () {
-      event.preventDefault();
-      feedbackModal.classList.remove("feedback-popup--show");
-    });
-</script>
+  <script src="js/script-index.js"></script>
 </body>
 </html>
