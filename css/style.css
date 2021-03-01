@@ -102,6 +102,7 @@ textarea:focus-within {
 .copyright__link:hover p {
     color: #FFBC9E;
 }
+ 
 .paginator__link-block:hover {
     cursor: pointer;
     border-radius: 50%;
@@ -744,7 +745,7 @@ textarea:focus-within {
 {
     position: absolute;
     top: 136px;
-    left: 481px;
+    left: 498px;
     z-index: 1;
     width: 80px;
     height: 140px;
@@ -753,8 +754,8 @@ textarea:focus-within {
 {
     position: absolute;
     padding: 30px 25px 31px 25px;
-    top: 62px;
-    right: 243px;
+    top: 59px;
+    right: 258px;
     background-color: #FEFEFE;
     border-radius: 21px;
 }
@@ -847,6 +848,17 @@ textarea:focus-within {
     display: flex;
     list-style: none;
 }
+
+.socio-block {
+    justify-content: space-between;
+    width: 164px;
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+}
 .socio-block__link {
     width: 32px;
     height: 32px;
@@ -875,6 +887,17 @@ textarea:focus-within {
     height: 13px;
     top: 7px;
     left: -21px;
+}
+.socio-block__link {
+    opacity: 80%;
+}
+.socio-block__link:hover,
+.socio-block__link:active {
+    opacity: 100%;
+    cursor: pointer;
+}
+.socio-block__link:hover .social-button path {
+    fill-opacity: 0.7;
 }
 .footer__copyright {
     margin-left: 208px;
