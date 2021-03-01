@@ -18,33 +18,64 @@
     <div class="wrapper">
       <header class="main-header">
   
-        <a class="main-header__logo"><img src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
+        <a class="main-header__logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Основный логотип"></a>
         
         <nav class = "main-nav">
           <ul class="main-nav__list">
-            <li><a class="link main-nav__link main-nav__link--active catalog-link" href="catalog.html">Каталог</a></li>
-            <li><a class=" link main-nav__link" href="#">Доставка и оплата</a></li>
-            <li><a class=" link main-nav__link" href="#">О компании</a></li>   
-          </ul>    
+            <li class="main-nav__link--catalog"><a class="link main-nav__a main-nav__a--catalog" href="catalog.html">Каталог</a>
+              <ul class="dropdown__list">
+                <li class="list__row"><a class="dropdown__link dropdown__link--bold" href="#">Новинки</a></li>
+                <li class="list__row"><a class="dropdown__link" href="catalog.html">Сливочное</a></li>
+                <li class="list__row"><a class="dropdown__link" href="#">Щербеты</a></li>
+                <li class="list__row"><a class="dropdown__link" href="#">Фруктовый лед</a></li>
+                <li class="list__row"><a class="dropdown__link" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a class=" link main-nav__a" href="#">Доставка и оплата</a></li>
+            <li><a class=" link main-nav__a" href="#">О компании</a></li>   
+          </ul>  
           
-          <section class="main-nav__dropdown">
-            <h2 class="dropdown__header visually-hidden">Выпадающее меню</h2>
-        
-            <ul class="dropdown__list">
-              <li><a class="dropdown__link dropdown__link--bold" href="#">Новинки</a></li>
-              <li><a class="dropdown__link" href="catalog.html">Сливочное</a></li>
-              <li><a class="dropdown__link" href="#">Щербеты</a></li>
-              <li><a class="dropdown__link" href="#">Фруктовый лед</a></li>
-              <li><a class="dropdown__link" href="#">Мелорин</a></li>
-            </ul>
-          </section>
-          
+
         </nav>
     
         <ul class="user-icons">
-          <li class="user-icons__icon user-icons__search"><button><!--<img class="user-icons__search-image" src="img/icons/search.svg" width="16" height="16" alt="">--><span class="visually-hidden">Поиск</span></button></li>
-          <li class="user-icons__icon user-icons__enter"><a href="#"><!--<img src="img/icons/enter.svg" width="20" height="19" alt="">--><span class="user-icons__enter-text">Вход</span></a></li>
-          <li class="user-icons__icon user-icons__cart user-icons__cart--added"><a href="#"><!--<img src="img/icons/cart.svg" width="21" height="20" alt="">--><span class="user-icons__cart-text user-icons__cart-text--added">2 товара</span></a></li>
+          <li class="user-icons__icon user-icons__search">
+            <button><span class="visually-hidden">Поиск</span></button>
+            <div class="search-popup">
+              <h2 class="search-popup__header visually-hidden">Простой поиск</h2>
+              <form class="search-popup__form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <input class="search-popup-text" id="search" type="text" name="search-form" placeholder="Крем-брюле">
+                </p>
+              </form>
+            </div>
+          </li>
+            
+          <li class="user-icons__icon user-icons__enter">
+            <a class="user-enter-link" href="#"><span class="user-icons__enter-text">Вход</span></a>
+            <div class="login-popup">
+              <h2 class="login-popup__header visually-hidden">Форма входа</h2>
+              
+              <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="login-p">
+                  <label for="login-login" class="visually-hidden">Логин</label>
+                  <input class ="login-popup-email" id="login-login" type="email" name="login" placeholder="email@example.com">
+                </p>
+                <p class="password-p">
+                  <label for="login-password" class="visually-hidden">Пароль</label>
+                  <input class="login-popup-text-field" id="login-password" type="password" name="password" placeholder="••••••">
+                </p>
+                  <button class="button login-button round-btn" type="submit">Войти</button>
+                  <div>
+                    <a href="#" class="link">Забыли пароль?</a>
+                    <a href="#" class="link">Новая регистрация</a>
+                  </div>
+          
+              </form>
+            </div> 
+          </li>
+            
+          <li class="user-icons__icon user-icons__cart"><a href="#"><!--<img src="img/icons/cart.svg" width="21" height="20" alt="">--><span class="user-icons__cart-text">Пусто</span></a></li>
         </ul>
     
         <div class="work-time">
@@ -378,40 +409,6 @@
       <p class="cart-preview__summary-text">Итого: <span class="cart-preview__summary-price">750 руб.</span></p>
       <button class="button cart-preview__submit-button" type="submit">Оформить заказ</button>
     </article>
-
-   <!--Логин попап-->
-  <section class="login-popup">
-    <h2 class="login-popup__header visually-hidden">Форма входа</h2>
-    
-    <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="login-login" class="visually-hidden">Логин</label>
-        <input class ="login-popup-email" id="login-login" type="email" name="login" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="login-password" class="visually-hidden">Пароль</label>
-        <input class="login-popup-text-field" id="login-password" type="password" name="password" placeholder="••••••">
-      </p>
-        <button class="button login-button" type="submit">Войти</button>
-        <div>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </div>
-
-    
-    </form>
-  </section> 
-
-
-   <!--Попап-поиска-->
-  <section class="search-popup">
-    <h2 class="search-popup__header visually-hidden">Простой поиск</h2>
-    <form class="search-popup__form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <input class="search-popup-text" id="search" type="text" name="search-form" placeholder="Крем-брюле">
-      </p>
-    </form>
-  </section>
 
    <!--Попап-форма обратной связи-->
    <section class="feedback-popup">
