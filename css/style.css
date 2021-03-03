@@ -47,7 +47,6 @@
   }
   .wrapper {
     position: relative;
-    height: inherit;
     width: 1146px;
     margin: 0 auto;
 }
@@ -997,6 +996,7 @@ textarea:focus-within {
 }
 .map-wrapper {
     pointer-events: none;
+    height: inherit;
 }
 .map__content 
 {
@@ -1045,7 +1045,6 @@ textarea:focus-within {
 .page-footer {
     padding-top: 20px;
     grid-row: 3;
-    height: 115px;
     display: flex;
     align-items: end;
     justify-content: flex-start;
