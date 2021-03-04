@@ -718,16 +718,36 @@ textarea:focus-within {
 }
 .catalog__item
 {
+    z-index: 1;
     height: 324px;
     width: 267px;
     position: relative;
 }
+.catalog__item:hover:after {
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    content: "";
+    left: -13px;
+    background:rgba(255,255,255,0.2);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: calc(100% + 26px);
+    height: calc(100% + 77px);
+    top:-1%;
+
+}
+.catalog__item:hover {
+    z-index: 2;
+}
 .catalog__item:focus .catalog__item-block {
     display: block;
 }
+
 .catalog__item:hover .catalog-btn-block {
     display: block;
 }
+/*
 .catalog-btn-block {
     display: none;
     z-index: 2;
@@ -743,8 +763,13 @@ textarea:focus-within {
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
+*/
+.catalog-btn-block {
+    display: none;
+    z-index: 3;
+}
 .item__button {
-    z-index: 2;
+    z-index: 3;
     display: block;
     width: 200px;
     margin: 0 auto;
