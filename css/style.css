@@ -515,7 +515,7 @@ textarea:focus-within {
     padding-left: 18px;
 }
 
-.user-icons__cart a::before {
+.user-icons__cart .cart-icon-btn::before {
     content: "";
     position: absolute;
     background: url("../img/icons/cart.svg");
@@ -523,13 +523,14 @@ textarea:focus-within {
     width: 21px;
     height: 19px;
 }
-.user-icons__cart--added a::before {
+.user-icons__cart--added .cart-icon-btn::before {
     background: url("../img/icons/cart-add.svg");
     width: 21px;
     height: 19px;
     left: 16px;
 }
-.user-icons__cart a {
+
+.user-icons__cart .cart-icon-btn {
     display: inherit;
     width: 85px;
     height: 18px;
@@ -721,6 +722,9 @@ textarea:focus-within {
     height: 324px;
     width: 267px;
     position: relative;
+}
+.catalog__item:focus .catalog__item-block {
+    display: block;
 }
 .catalog__item:hover .catalog-btn-block {
     display: block;
@@ -1219,6 +1223,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     margin-bottom: 40px;
 }
 .filter-form fieldset {
+    margin: 0;
     border: none;
 }
 .filter-text {
@@ -1232,14 +1237,11 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 }
 .filter-sorting {
     padding: 0;
-    width: 196px;
 }
 .filter-sorting legend {
-    padding-left: 0px;
+    padding-left: 15px;
 }
-.filter-calories {
-    width: 425px;
-}
+
 
 .filter-filler {
     width: 711px;
@@ -1261,6 +1263,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     padding-left: 16px;
 }
 .catalog-sorting {
+    margin-top: 4px;
     position: relative;
 }
 .catalog-sorting::after {
@@ -1283,9 +1286,10 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     border: none;
 }
 .filter-price legend {
-    padding-left: 19px;
+    padding-left: 31px;
 }
 .filter-price__range-filter {
+    margin-left: 13px;
     margin-top: 5px;
 }
 .filter-price__range-controls {
@@ -1293,8 +1297,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     margin-left: 3px;
     padding-top: 17px;
     padding-left: 22px;
-    padding-right: 22px;
-    width: 176px;
+    padding-right: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -1329,30 +1332,53 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     right: 67px;
 }
 .filter-calories {
+    padding: 0;
     display: block;
     position: relative;
     cursor: pointer;
     user-select:none;
 }
 .filter-calories legend {
-    padding-left: 17px;
+    padding-left: 30px;
 }
+
 .filter-calories ul {
-    height: 27px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;    
     margin: 0;
-    padding-top: 9px;
+    margin-top: 3px;
+    margin-left: 14px;
+    padding-left: 17px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 9px;
     display: flex;
-    
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
 }
 .filter-calories li {
+    margin-left: 29px;
+}
+.filter-calories li:nth-child(2) {
+    margin-left: 53px;
+}
+.filter-calories li:nth-child(3) {
+    margin-left: 53px;
+}
+.filter-calories li:nth-child(4) {
+    margin-left: 53px;
+}
+.calories__label {
+    cursor: pointer;
+    display: block;
     position: relative;
-    list-style: none;
 }
 .filter-calories__checkbox + label::before {
     position: absolute;
-    right:23px;
+    left: -32px;
     content: "";
     width: 14px;
     height: 14px;
@@ -1362,7 +1388,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 .filter-calories__checkbox:checked + label::after{
     position: absolute;
     top: 5px;
-    right: 28px;
+    left: -27px;
     content: "";
     width: 10px;
     height: 10px;
@@ -1374,17 +1400,16 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 }
 .filter-filler {
     padding: 0;
-    padding: 0;
+}
+.filter-filler legend {
+    padding-left: 16px;
 }
 .filter-filler ul {
     margin: 0;
     padding: 8px 19px 10px 16px;
     margin-top: 6px;
-    width: 710px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-
-    height: 36px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1394,9 +1419,20 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     position: relative;
     margin: 0;
     padding: 0;
-    margin-left: 15px;
+    margin-left: 32px;
 }
-
+.filter-filler li:nth-child(2) {
+    margin-left: 52px;
+}
+.filter-filler li:nth-child(3) {
+    margin-left: 57px;
+}
+.filter-filler li:nth-child(4) {
+    margin-left: 57px;
+}
+.filter-filler li:nth-child(5) {
+    margin-left: 54px;
+}
 .filter-filler label {
     position: relative;
     display: block;
@@ -1409,18 +1445,25 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 }
 .filter-filler__filler-checkbox + label:before {
     position: absolute;
+    left: -31px;
     content:"";
     width: 24px;
     height: 20px;
     background: url(../img/checkbox-off.svg) no-repeat;
 }
+.filter-filler__filler-checkbox:checked + label:before {
+    background: url(../img/checkbox-on.svg) no-repeat;
+}
 .filter-filler__filler-checkbox:checked + label::after {
     position: absolute;
-    left:0px;
+    left: -31px;
     content:"";
     width: 24px;
     height: 20px;
     background: url(../img/checkbox-on.svg) no-repeat;
+}
+.filter-filler__filler-checkbox + label::after {
+    background: url(../img/checkbox-off.svg) no-repeat;
 }
 .filter__submit-btn {
     margin-top: 24px;
@@ -1616,15 +1659,26 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 .catalog-link:hover .main-nav__dropdown {
     display: block;
 }
+.user-icons__cart:hover {
+    cursor: pointer;
+}
+.user-icons__cart:focus-within .cart-preview {
+    display: block;
+}
+.user-icons__cart:hover .cart-preview
+{
+    display: block;
+}
 .cart-preview {
+    z-index: 2;
     box-sizing: border-box;
     width: 540px;
     padding: 21px 14px 21px 21px;
     display: none;
     background: #F8F7F4;
     position: absolute;
-    top: 60px;
-    right: 121px;
+    top: 36px;
+    right: 0px;
     border-radius: 4px;
 }
 .cart-preview--show {
@@ -1648,7 +1702,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 .cart-preview-table-row:last-child {
     margin-bottom: 0;
@@ -1696,8 +1750,9 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .cart-preview__text {
-    width: 217px;
+    max-width: 217px;
     margin: 0;
+    margin-top: 7px;
     margin-left: 13px;
     color: var(--dark-text-color);
     font-weight: 400;
