@@ -88,11 +88,14 @@
     color: #FFBC9E;
 }
 input:hover {
-    border: 2px solid rgba(178, 178, 178, 0.52);
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px rgba(178, 178, 178, 0.52);
+    border: none;
 }
+
 input:focus {
-    outline-width: 2px;
-    outline-color: rgba(46, 136, 228, 0.52);
+    border: none;
+    box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52)
 }
 input:focus-within {
     font-weight: 700;
@@ -323,7 +326,7 @@ textarea:focus-within {
 .user-icons__search {
     position: relative;
 }
-.user-icons__search button {
+.user-icons__search a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,7 +343,7 @@ textarea:focus-within {
 .user-icons__search:focus-within .search-popup {
     display: block;
 }
-.user-icons__search button:before {
+.user-icons__search a:before {
     content: "";
     position: absolute;
     background: url("../img/icons/search.svg");
@@ -348,20 +351,20 @@ textarea:focus-within {
     width: 16px;
     height: 16px;
 }
-.user-icons__search button:hover {
+.user-icons__search a:hover {
     background-color: white;
 }
 .user-icons__search:hover {
     border-radius: 50%;
 }
-.user-icons__search button:focus-within {
+.user-icons__search a:focus-within {
     outline: none;
     background-color: white;
 }
 .user-icons__search:focus-within {
     border-radius: 50%;
 }
-.user-icons__search button:hover:before {
+.user-icons__search a:hover:before {
     content: "";
     position: absolute;
     background: url("../img/icons/search-black.svg");
@@ -369,7 +372,7 @@ textarea:focus-within {
     width: 16px;
     height: 16px;
 }
-.user-icons__search button:focus-within:before {
+.user-icons__search a:focus-within:before {
     outline: none;
     content: "";
     position: absolute;
@@ -585,6 +588,15 @@ textarea:focus-within {
 .slider-icons {
     bottom: 50px;
     position: absolute;
+    display: flex;
+}
+.slider-icons button {
+    background: inherit;
+    border: none;
+    padding: 0;
+}
+.slider-icons button:focus-within .slider-icons__icon:after {
+    border: 2px dolid black;   
 }
 .slider-icons__icon:hover::after {
     cursor: pointer;
@@ -642,6 +654,8 @@ textarea:focus-within {
     transform: translate(-50%, -50%);
 }
 .main-slider__promo-button {
+    text-decoration: none;
+    cursor: pointer;
     font-weight: 700;
     margin: 0 auto;
     margin-top: 25px;
@@ -687,6 +701,7 @@ textarea:focus-within {
     line-height: 22px;
 }
 .promo-block__button {
+    text-decoration: none;
     margin-left: auto;
     padding: 12px 22px 14px 22px;
     background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
@@ -845,6 +860,9 @@ textarea:focus-within {
 }
 .about-us__link {
     cursor: pointer;
+}
+.about-us__link:hover .blog-section__header {
+    color: #FFBC9E;
 }
 .about-us__link:focus-within {
     border: 1px solid pink;
@@ -1044,6 +1062,7 @@ textarea:focus-within {
 }
 .map__contacts
 {   pointer-events: all;
+    max-width: 303px;
     position: absolute;
     top: 15%;
     right: 0%;
@@ -1065,12 +1084,12 @@ textarea:focus-within {
     text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
-    
-}
-.map__contacts-button p {
+
     margin: 0 auto;
     text-align: center;
+    
 }
+
 .page-footer {
     padding-top: 20px;
     grid-row: 3;
@@ -1090,8 +1109,8 @@ textarea:focus-within {
 }
 .contacts__bottom-text {
     margin: 0;
-    padding-top: 21px;
-    padding-bottom: 30px;
+    margin-top: 21px;
+    margin-bottom: 30px;
 }
 .top-text-big {
     font-weight: bold;
