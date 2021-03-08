@@ -67,6 +67,7 @@
     font-size:16px;
     line-height: 24px;
 }
+
 .slider-1--active {
     background: var(--index-first-background);
 }
@@ -177,11 +178,11 @@ textarea:focus-within {
     line-height: 18px;
     font-weight: 700;
 }
-.main-nav__link--catalog:hover .dropdown__list {
-    display: flex;
+.main-nav__link--catalog:hover .dropdown-wrapper {
+    display: block;
 }
-.main-nav__link--catalog:focus-within .dropdown__list {
-    display: flex;
+.main-nav__link--catalog:focus-within .dropdown-wrapper {
+    display: block;
 }
 .main-nav__a:hover,
 .main-nav__a:focus-within {
@@ -201,14 +202,20 @@ textarea:focus-within {
 .main-nav__dropdown-menu {
     position: relative;
 }
-
+.dropdown-wrapper {
+    padding-top: 14px;
+    top: 20px;
+    display: none;
+    position: absolute;
+    
+}
 .dropdown__list {
     transition-delay: 3s;
     z-index: 2;
     position: absolute;
-    display: none;
+    display: block;
     flex-direction: column;
-    margin: 9px 0 0 -7px;
+    margin: 0px 0 0 -7px;
     padding: 0;
     list-style: none;
     text-decoration: none;
@@ -288,13 +295,13 @@ textarea:focus-within {
     text-decoration: none;
 }
 .search-popup {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     z-index: 2;
-    top: 111%;
-    right: 0%;
-    position: absolute;
-    display: none;
+    display: block;
     text-align: center;
-    width: 341px;
     background: #F8F7F4;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
@@ -311,8 +318,6 @@ textarea:focus-within {
 }
 .search-popup p {
     margin: 0;
-    margin-top: 20px;
-    margin-bottom: 22px;
 }
 .search-popup-text {
     width: 311px;
@@ -336,11 +341,17 @@ textarea:focus-within {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
 }
-
-.user-icons__search:hover .search-popup {
+.search-wrapper {
+    padding-top: 4px;
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 0px;
+}
+.user-icons__search:hover .search-wrapper {
     display: block;
 }
-.user-icons__search:focus-within .search-popup {
+.user-icons__search:focus-within search-wrapper{
     display: block;
 }
 .user-icons__search a:before {
@@ -381,12 +392,8 @@ textarea:focus-within {
     width: 16px;
     height: 16px;
 }
-.user-enter-link:hover .login-popup {
-    display: block;
-}
-.user-icons__enter:focus-within .login-popup {
-    display: block;
-}
+
+
 .login-popup__form a {
     text-decoration: underline;
     text-decoration-color: rgba(50, 50, 50, 0.3);
@@ -396,10 +403,7 @@ textarea:focus-within {
 }
 .login-popup {
     z-index: 2;
-    display: none;
-    position: absolute; 
-    top: 110%;
-    right: 0%;
+    display: block;
     width: 277px;
     background: #F8F7F4;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -467,8 +471,17 @@ textarea:focus-within {
 
     background-color: white;
 }
-.user-icons__enter:hover .login-popup {
-
+.login-wrapper {
+    padding-top: 4px;
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 0px;
+}
+.user-icons__enter:hover .login-wrapper {
+    display: block;
+}
+.user-icons__enter:focus-within .login-wrapper {
     display: block;
 }
 .user-icons__enter:hover .user-icons__enter-text {
@@ -513,6 +526,7 @@ textarea:focus-within {
     background: rgba(255, 255, 255, 0.2);
 }
 .user-icons__cart--added {
+    background: #FFFFFF;
     margin: 0;
     padding-left: 18px;
 }
@@ -1091,7 +1105,7 @@ textarea:focus-within {
 }
 
 .page-footer {
-    padding-top: 20px;
+    padding-top: 27px;
     grid-row: 3;
     display: flex;
     align-items: end;
@@ -1305,6 +1319,10 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     padding-bottom: 10px;
     padding-left: 16px;
 }
+.catalog-sorting select:hover {
+    cursor: pointer;
+    color: black;
+}
 .catalog-sorting {
     margin-top: 4px;
     position: relative;
@@ -1358,15 +1376,20 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     background-color:#F8F7F4;
 }
 .range-controls__toggle {
-    cursor: pointer;
     position: absolute;
     top: 8px;
     width: 5px;
-    height: 4px;
+    height: 5px;
     padding: 0;
     background: #ABABAB;
     border: 8px solid white;
     border-radius: 50%;
+}
+.range-controls__toggle:hover {
+    cursor: pointer;
+    width: 6px;
+    height: 6px;
+    border: 7px solid white;
 }
 .range-controls__toggle-min {
     left: 33px;
@@ -1519,9 +1542,17 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
-    border: 2px solid white;
+    box-shadow: 0 0 0 2px white ;
+    border: none;
     border-radius: 25px;
-
+}
+.filter__submit-btn:hover {
+    background-color: white;
+    color: black;
+}
+.filter__submit-btn:active {
+    border-top: none;
+    box-shadow: inset 0px 2px 1px #313235;
 }
 .catalog-list {
     list-style: none;
@@ -1537,10 +1568,10 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     row-gap: 0;
 }
 .catalog__paginator {
+    margin: 0;
+    margin-top: 73px;
+    padding-bottom: 21px;
     position: relative;
-    padding-top: 57px;
-    padding-right: 25px;
-    padding-bottom: 13px;
     justify-content: flex-end;
     list-style: none;
     display: flex;
@@ -1555,35 +1586,27 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     background: rgba(255, 255, 255, 0.2);
 }
 .paginator__link-block {
+    display: block;
     margin-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     text-align: center;
     width: 26px;
-    height: 26px;
+    height: 22px;
 }
+.paginator__link-block:first-child {
+
+}
+.paginator__link-block:last-child {
+    
+}
+.paginator__link-block:active,
 .paginator__link-block--active {
     background-color: white;
     border-radius: 50%;
 }
 .paginator__link-block--active a {
     color: black;
-}
-.paginator__link-block:first-child::before {
-    position: absolute;
-    content: "";
-    width: 7px;
-    height: 12px;
-    top: 63px;
-    right:188px;
-    background: url(../img/icon-left-small.svg) no-repeat;
-}
-.paginator__link-block:last-child::after {
-    position: absolute;
-    content: "";
-    width: 7px;
-    height: 12px;
-    top: 63px;
-    right: 0px;
-    background: url(../img/icon-right-small.svg) no-repeat;
 }
 
 .paginator__link {
