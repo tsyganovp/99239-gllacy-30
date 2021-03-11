@@ -87,6 +87,10 @@
 .link:active {
     color: #FFBC9E;
 }
+.popup-link:hover,
+.popup-link:active {
+    color: #E84D37;
+}
 .input:hover {
     box-sizing: border-box;
     box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
@@ -148,6 +152,7 @@ textarea:focus-within {
 .round-btn:hover,
 .round-btn:focus-within
  {
+     cursor: pointer;
     outline: none;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
     box-shadow: 0px 2px 2px #AC1000;
@@ -158,6 +163,7 @@ textarea:focus-within {
 }
 
 .main-header {
+    z-index: 10;
     position: relative;
     padding-top: 10px;
     display: flex;
@@ -206,6 +212,8 @@ textarea:focus-within {
     border-radius: 26px;
     color: black;
 }
+
+
 .main-nav__a--catalog:hover + .dropdown-wrapper
 {
     display: block;
@@ -214,13 +222,16 @@ textarea:focus-within {
 {
     display: block;
 }
-.main-nav__a--catalog,
-.main-nav__a:active {
+.main-nav__a--catalog {
     color: var(--white-text-color);
     text-decoration: none;
     text-decoration: none;
     background-color: #D07058;
     border-radius: 26px;
+}
+.main-nav__a:active {
+    border-top: none;
+    box-shadow: inset 0px 2px 1px #313235;
 }
 .main-nav__dropdown-menu {
     position: relative;
@@ -263,9 +274,7 @@ textarea:focus-within {
 .main-nav__dropdown a {
     padding: 0;
 }
-.dropdown__list .list__row:first-child {
-    padding: 10px 21px 11px 21px;
-}
+
 .dropdown__list .list__row:first-child::after {
     position: absolute;
     content: "";
@@ -275,23 +284,39 @@ textarea:focus-within {
     width: 128px;
     background-color: rgba(50, 50, 50, 0.2);
 }
-.dropdown__list .list__row {
-    padding: 9px 20px 7px 21px;
-}
-.dropdown__list .list__row:hover,
-.dropdown__list .list__row:focus-within {
+
+.dropdown__link:hover,
+.dropdown__link:focus-within {
     background: #FBDED7;
 }
+.dropdown__link:active {
+    background: #F6B5A5;
+}
+
+.filter__submit-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.filter__submit-btn:active {
+    border-top: none;
+    box-shadow: inset 0px 2px 1px #313235;
+}
+
+
 .list__row:focus-within a {
     outline: none;
 }
-.dropdown__list .list__row:first-child:hover {
+.dropdown__link--bold:hover {
     border-radius: 4px 4px 0px 0px;
 }
-.dropdown__list .list__row:last-child:hover {
+.dropdown__link--last:hover {
     border-radius: 0px 0px 4px 4px;
 }
 .dropdown__link {
+    height: 100%;
+    display: block;
+    padding: 9px 20px 7px 21px;
     text-decoration: none;
     font-family: Roboto;
     font-weight: 400;
@@ -302,6 +327,7 @@ textarea:focus-within {
 
 .dropdown__link--bold {
     font-weight: 700; 
+    padding: 10px 21px 11px 21px;
    
 }
 
@@ -434,7 +460,7 @@ textarea:focus-within {
     line-height: 15px;
 }
 .login-popup {
-    z-index: 2;
+    
     display: block;
     width: 277px;
     background: #F8F7F4;
@@ -529,6 +555,10 @@ textarea:focus-within {
     width: 100%;
     height: 100%;
 }
+.user-enter-link:hover {
+    background-color: white;
+    border-radius: inherit;
+}
 .user-enter-link:hover + .user-enter-link:before {
     background: url("../img/icons/enter-black.svg");
 } 
@@ -598,6 +628,9 @@ textarea:focus-within {
     width: 100%;
     height: 100%;
 }
+.cart-preview-delete-btn img:hover {
+    cursor: pointer;
+}
 .cart-wrapper {
     z-index: 2;
     display: none;
@@ -634,7 +667,7 @@ textarea:focus-within {
     color: #323232;
 }
 .work-time {
-    z-index: 2;
+    
     position: absolute;
     right: 0;
     top: 93%;
@@ -846,6 +879,7 @@ textarea:focus-within {
 }
 .catalog__item:hover {
     z-index: 2;
+    cursor: pointer;
 }
 .catalog__item:focus .catalog__item-block {
     display: block;
@@ -1348,6 +1382,9 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     top: 10px;
     left: 62px;
 }
+.catalog-breadcrumb--last:after {
+    display: none;
+}
 .catalog-breadcrumbs__breadcrumb a {
     color: var(--white-text-color);
     font-size: 14px;
@@ -1402,7 +1439,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     font-size: 16px;
     line-height: 18px;
     appearance: none;
-    width: 196px;
+    padding-right: 37px;
     border: none;
     border-radius: 18px;
     padding-top: 9px;
@@ -1421,6 +1458,15 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     position: absolute;
     content: "";
     background: url(../img/sorting-arrow.svg) no-repeat;
+    width: 11px;
+    height: 10px;
+    top: 14px;
+    right: 14px;
+}
+.catalog-sorting:hover::after {
+    position: absolute;
+    content: "";
+    background: url(../img/sorting-arrow-black.svg) no-repeat;
     width: 11px;
     height: 10px;
     top: 14px;
@@ -1643,6 +1689,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     border-radius: 25px;
 }
 .filter__submit-btn:hover {
+    cursor: pointer;
     background-color: white;
     color: black;
 }
@@ -1667,7 +1714,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 }
 .catalog__paginator {
     margin: 0;
-    margin-top: 73px;
+    margin-top: 76px;
     padding-bottom: 21px;
     position: relative;
     justify-content: flex-end;
@@ -1676,33 +1723,58 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .paginator__link-block {
+    margin-right: 3px;
     display: block;
-    margin-left: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
     width: 26px;
-    height: 22px;
+    height: 26px;
 }
-
-
-.paginator__link-block--active {
-    background-color: white;
-    border-radius: 50%;
+.paginator__link-block:nth-child(2) {
+    margin-right: 0px;
+    margin-left: 3px;
 }
-
-
-.paginator__link-block--active a {
-    color: black;
+.paginator__link-block:nth-child(3) {
+    margin-right: 0px;
+    margin-left: 6px;
+}
+.paginator__link-block:nth-child(4) {
+    margin-right: 0px;
+    margin-left: 3px;
+}
+.paginator__link-block:nth-child(5) {
+    margin-right: 0px;
+    margin-left: 3px;
+}
+.paginator__link-block:nth-child(6) {
+    margin-right: 0px;
+    margin-left: 3px;
+}
+.paginator__link-block:nth-child(7) {
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .paginator__link {
+    box-sizing: border-box;
+    padding-top: 4px;
+    text-align: center;
+    display: block;
+    height: inherit;
+    width: inherit;
+    margin: 0 auto;
     color: var(--white-text-color);
     font-weight: 500;
     line-height: 18px;
     text-decoration: none;
+    border-radius: 50%;
 }
-.paginator__link:hover + .paginator__link-block {
+.paginator__link-block:nth-child(7) .paginator__link {
+    text-align: end;
+}
+.paginator__link--active {
+    background-color: white;
+    color: black;
+}
+.paginator__link[href]:hover {
     cursor: pointer;
     color: white;
     border-radius: 50%;
