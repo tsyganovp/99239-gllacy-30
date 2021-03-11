@@ -1578,6 +1578,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     display: block;
     position: relative;
 }
+
 .filter-calories__checkbox + label::before {
     position: absolute;
     left: -32px;
@@ -1585,6 +1586,24 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     width: 14px;
     height: 14px;
     border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+.filter-calories__checkbox:hover + label::before {
+    position: absolute;
+    left: -32px;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+.filter-calories__checkbox:disabled + label::before {
+    position: absolute;
+    left: -32px;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
 }
 .filter-calories__checkbox:checked + label::after{
@@ -1595,6 +1614,26 @@ border: 2px solid rgba(255, 255, 255, 0.7);
     width: 10px;
     height: 10px;
     background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+.filter-calories__checkbox:hover + label::after{
+    position: absolute;
+    top: 5px;
+    left: -27px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+.filter-calories__checkbox:disabled + label::after{
+    position: absolute;
+    top: 5px;
+    left: -27px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
 }
 .calories__span {
@@ -1660,6 +1699,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 .filter-filler__filler-checkbox:checked + label:before {
     background: url(../img/checkbox-on.svg) no-repeat;
 }
+
 /*
 .filter-filler__filler-checkbox:checked + label::after {
     position: absolute;
