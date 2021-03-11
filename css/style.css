@@ -1734,7 +1734,7 @@ border: 2px solid rgba(255, 255, 255, 0.7);
 
 .feedback-popup {
     width: 428px;
-    display: block;
+    display: none;
     z-index: 2;
     padding:14px 24px 26px 25px ;
     position: absolute;
