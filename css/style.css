@@ -213,6 +213,7 @@ textarea:focus-within {
   border-radius: 26px;
   color: black;
 }
+
 .main-nav__a--catalog:hover,
 .main-nav__a--catalog:focus-within {
   outline: none;
@@ -221,10 +222,10 @@ textarea:focus-within {
   color: black;
 }
 
-.main-nav__a--catalog:hover + .dropdown-wrapper {
+.main-nav__a:hover + .dropdown-wrapper {
   display: block;
 }
-.main-nav__a--catalog:focus-within + .dropdown-wrapper {
+.main-nav__a:focus-within + .dropdown-wrapper {
   display: block;
 }
 .main-nav__a--catalog {
