@@ -91,6 +91,12 @@
 .popup-link:active {
   color: #e84d37;
 }
+.input {
+  font-weight: 700;
+}
+.input::placeholder {
+  font-weight: 400;
+}
 .input:hover {
   box-sizing: border-box;
   box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
@@ -103,14 +109,7 @@
   border: 1px solid rgba(46, 136, 228, 0.52);
   outline: none;
 }
-.input:focus-within {
-  box-shadow: 0 0 0 1px rgba(106, 137, 168, 0.52);
-  border: 1px solid rgba(46, 136, 228, 0.52);
-  box-sizing: border-box;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
+
 .popup-text-field:hover {
   box-sizing: border-box;
   box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
@@ -120,12 +119,9 @@
   box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
   border: 1px solid rgba(46, 136, 228, 0.52);
   outline: none;
+  line-height: inherit;
 }
-.popup-text-field:focus-within {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
+
 textarea:hover {
   box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -1850,7 +1846,7 @@ textarea:focus-within {
   display: none;
   z-index: 2;
   padding: 15px 24px 26px 25px;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -1909,7 +1905,14 @@ textarea:focus-within {
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 4px;
 }
+.text-field::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.text-field:focus-within::placeholder {
 
+}
 .feedback-field-1 {
   box-sizing: border-box;
   margin-bottom: 21px;
