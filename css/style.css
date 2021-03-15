@@ -121,21 +121,18 @@
   outline: none;
   line-height: inherit;
 }
-
-textarea:hover {
+.textarea::placeholder {
+  font-weight: 400;
+}
+.textarea:hover {
   box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
-textarea:focus {
+.textarea:focus {
   box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
   border: 1px solid rgba(46, 136, 228, 0.52);
   outline: none;
-  font-weight: 400;
-}
-textarea:focus-within {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
 }
 .copyright__link:hover p {
   color: #ffbc9e;
@@ -247,6 +244,12 @@ textarea:focus-within {
 .dropdown-wrapper:hover {
   display: block;
 }
+.dropdown-wrapper:focus {
+  display: block;
+}
+.dropdown-wrapper:focus-within {
+  display: block;
+}
 .dropdown__list {
   transition-delay: 3s;
   z-index: 3;
@@ -256,7 +259,7 @@ textarea:focus-within {
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: Roboto;
+  font-family: "Roboto";
   color: var(--dark-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -317,7 +320,7 @@ textarea:focus-within {
   display: block;
   padding: 9px 20px 7px 21px;
   text-decoration: none;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 400;
   color: var(--dark-text-color);
   font-size: 14px;
@@ -328,7 +331,9 @@ textarea:focus-within {
   font-weight: 700;
   padding: 10px 21px 11px 21px;
 }
-
+.dropdown__link--active {
+  background: #D07058;
+}
 .user-icons {
   margin: 0 0 14px auto;
   padding: 0;
@@ -495,7 +500,7 @@ textarea:focus-within {
   box-shadow: 0px 1px 2px rgba(172, 16, 0, 0.25);
   border-radius: 26px;
   border: none;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 16px;
@@ -577,7 +582,7 @@ textarea:focus-within {
   margin-left: 28px;
   padding-top: 3px;
   color: var(--white-text-color);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -652,7 +657,7 @@ textarea:focus-within {
   align-self: center;
   margin-left: 30px;
   color: var(--white-text-color);
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -834,14 +839,14 @@ textarea:focus-within {
 }
 
 .hits {
-  margin-top: 38px;
+  margin-top: 35px;
 }
 
 .hits ul {
   margin: 0;
-  padding-left: -13px;
-  padding-right: -13px;
   padding: 0;
+  margin-left: -13px;
+  margin-right: -13px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -921,7 +926,7 @@ textarea:focus-within {
   color: var(--white-text-color);
   background: var(--button-background);
 
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -931,7 +936,7 @@ textarea:focus-within {
 }
 .item__price {
   margin: 0;
-  margin-top: 32px;
+  margin-top: 36px;
   padding-left: 13px;
   position: absolute;
   left: 0;
@@ -943,7 +948,7 @@ textarea:focus-within {
 }
 .item__text {
   display: block;
-  margin-top: 8px;
+  margin-top: 4px;
   margin-bottom: 0px;
   text-align: center;
   text-decoration: underline;
@@ -964,7 +969,7 @@ textarea:focus-within {
   line-height: 45px;
 }
 .hit {
-  top: 0;
+  top: 3px;
   height: 61px;
   width: 61px;
   border-radius: 50%;
@@ -991,9 +996,14 @@ textarea:focus-within {
 .about-us__link:hover .blog-section__header {
   color: #ffbc9e;
 }
-.about-us__link:focus-within {
-  border: 1px solid pink;
+.about-us__link:focus {
+  border: none;
+  outline: none;
 }
+.about-us__link:focus .blog-section__header {
+  color: #ffbc9e;
+}
+
 .about-us__header {
   color: var(--dark-text-color);
   margin: 0;
@@ -1136,7 +1146,7 @@ textarea:focus-within {
 }
 .emailer__button {
   margin-left: 8px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1536,7 +1546,7 @@ textarea:focus-within {
 
 .filter-calories ul {
   margin: 0;
-  margin-top: 3px;
+  margin-top: 5px;
   margin-left: 14px;
   padding-left: 17px;
   padding-right: 16px;
@@ -1552,7 +1562,7 @@ textarea:focus-within {
   line-height: 18px;
 }
 .filter-calories li {
-  margin-left: 29px;
+  margin-left: 27px;
 }
 .filter-calories li:nth-child(2) {
   margin-left: 53px;
@@ -1938,7 +1948,7 @@ textarea:focus-within {
   padding-top: 10px;
   padding-bottom: 10px;
   letter-spacing: inherit;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
