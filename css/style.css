@@ -11,6 +11,7 @@
 
   --main-font: "Roboto", "Arial", sans-serif;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto.woff2") format("woff2"),
@@ -19,6 +20,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/robotobold.woff2") format("woff2"),
@@ -27,6 +29,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/robotomedium.woff2") format("woff2"),
@@ -808,11 +811,11 @@
   background-color: #a70424;
 }
 .raspberry-bg {
-  background-image: url(../img/backgrounds/raspberry.jpg);
+  background-image: url("../img/backgrounds/raspberry.jpg");
 }
 
 .chocolate-bg {
-  background-image: url(../img/backgrounds/chocolate.jpg);
+  background-image: url("../img/backgrounds/chocolate.jpg");
 }
 .promo-block__header {
   margin: 0;
@@ -955,7 +958,7 @@
   margin: 0 auto;
   margin-top: 42px;
   padding: 24px 23px 30px 20px;
-  background: rgb(209, 204, 156) url(../img/pattern.jpg);
+  background: rgb(209, 204, 156) url("../img/pattern.jpg");
   border-radius: 17px;
 }
 .about-us__link {
@@ -1011,7 +1014,7 @@
   content: "";
   width: 49px;
   height: 49px;
-  background: url(../img/icons/about-us-1.svg) no-repeat;
+  background: url("../img/icons/about-us-1.svg") no-repeat;
 }
 
 .about-us__text--icon-2:before {
@@ -1021,7 +1024,7 @@
   content: "";
   width: 49px;
   height: 49px;
-  background: url(../img/icons/about-us-4.svg) no-repeat;
+  background: url("../img/icons/about-us-4.svg") no-repeat;
 }
 .about-us__text--icon-3:before {
   position: absolute;
@@ -1030,7 +1033,7 @@
   content: "";
   width: 49px;
   height: 49px;
-  background: url(../img/icons/about-us-2.svg) no-repeat;
+  background: url("../img/icons/about-us-2.svg") no-repeat;
 }
 .about-us__text--icon-4:before {
   position: absolute;
@@ -1039,7 +1042,7 @@
   content: "";
   width: 49px;
   height: 49px;
-  background: url(../img/icons/about-us-3.svg) no-repeat;
+  background: url("../img/icons/about-us-3.svg") no-repeat;
 }
 .addition-information {
   display: flex;
@@ -1050,7 +1053,7 @@
 .about-us__blog-section {
   padding: 20px 242px 89px 20px;
   border-radius: 18px;
-  background: pink url(../img/backgrounds/strawberry.jpg);
+  background: pink url("../img/backgrounds/strawberry.jpg");
   background-size: cover;
 }
 .blog-section__text {
@@ -1073,7 +1076,7 @@
   align-items: center;
   padding: 6px;
   border-radius: 23px;
-  background: url(../img/backgrounds/mail.jpg) no-repeat;
+  background: url("../img/backgrounds/mail.jpg") no-repeat;
 }
 .emailer__form {
   width: 548px;
@@ -1152,7 +1155,7 @@
   z-index: 1;
   width: 80px;
   height: 140px;
-  background-image: url(../img/pointer.svg);
+  background-image: url("../img/pointer.svg");
 }
 .map__contacts {
   pointer-events: all;
@@ -1289,7 +1292,7 @@
 .footer__link--bold::before {
   position: absolute;
   content: "";
-  background: url(../img/icons/heart.png) no-repeat;
+  background: url("../img/icons/heart.png") no-repeat;
   width: 15px;
   height: 13px;
   top: 7px;
@@ -1333,7 +1336,7 @@
 .catalog-breadcrumbs li::after {
   position: absolute;
   content: "";
-  background-image: url(../img/bread-arrow.svg);
+  background-image: url("../img/bread-arrow.svg");
   width: 6px;
   height: 6px;
   top: 10px;
@@ -1414,7 +1417,7 @@
 .catalog-sorting::after {
   position: absolute;
   content: "";
-  background: url(../img/sorting-arrow.svg) no-repeat;
+  background: url("../img/sorting-arrow.svg") no-repeat;
   width: 11px;
   height: 10px;
   top: 14px;
@@ -1423,7 +1426,7 @@
 .catalog-sorting:hover::after {
   position: absolute;
   content: "";
-  background: url(../img/sorting-arrow-black.svg) no-repeat;
+  background: url("../img/sorting-arrow-black.svg") no-repeat;
   width: 11px;
   height: 10px;
   top: 14px;
@@ -1641,17 +1644,17 @@
   content: "";
   width: 24px;
   height: 20px;
-  background: url(../img/checkbox-off.svg) no-repeat;
+  background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.8;
 }
 .filter-filler__filler-checkbox:checked + label:before {
-  background: url(../img/checkbox-on.svg) no-repeat;
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 .filter-filler__filler-checkbox:checked + label:before {
-  background: url(../img/checkbox-on.svg) no-repeat;
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 .filter-filler__filler-checkbox:disabled + label:before {
-    background: url(../img/checkbox-on.svg) no-repeat;
+    background: url("../img/checkbox-on.svg") no-repeat;
     opacity: 0.4;
 }
 .filter-filler__filler-checkbox:hover + label:before {

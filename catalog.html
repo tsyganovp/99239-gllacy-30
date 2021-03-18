@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style-min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <title>Каталог мороженного</title>
   </head>
 
@@ -78,9 +78,10 @@
                   method="post"
                 >
                   <p>
+                    <label for="search-popup" class="visually-hidden">Поиск</label>
                     <input
                       class="input search-popup-text"
-                      id="search"
+                      id="search-popup"
                       type="text"
                       name="search-form"
                       placeholder="Крем-брюле"
@@ -261,6 +262,7 @@
             <fieldset class="filter-sorting filter-text">
               <legend>Сортировка:</legend>
               <div class="catalog-sorting">
+                <label for ="catalog-sorting" class="visually-hidden">Сортировка</label>
                 <select name="sorting" id="catalog-sorting">
                   <option value="по популярности">по популярности</option>
                   <option value="сначала недорогие">сначала недорогие</option>
