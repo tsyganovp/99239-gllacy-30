@@ -815,6 +815,7 @@
 }
 
 .chocolate-bg {
+  background-color: rgb(85, 46, 17);
   background-image: url("../img/backgrounds/chocolate.jpg");
 }
 .promo-block__header {
