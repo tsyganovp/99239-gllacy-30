@@ -92,7 +92,7 @@
   color: #ffbc9e;
 }
 
-.link:focus-within {
+.link:focus {
   outline: none;
   color: #ffbc9e;
 }
@@ -166,7 +166,7 @@
 
 .button {
   color: var(--white-text-color);
-  background: var(--button-background);
+  background-color: var(--button-background);
   font-size: 32px;
   line-height: 44px;
   letter-spacing: 0.05em;
@@ -174,7 +174,7 @@
 }
 
 .round-btn:hover,
-.round-btn:focus-within {
+.round-btn:focus {
   cursor: pointer;
   outline: none;
   background: linear-gradient(
@@ -230,7 +230,7 @@
 }
 
 .main-nav__tab-link:hover,
-.main-nav__tab-link:focus-within {
+.main-nav__tab-link:focus {
   outline: none;
   background-color: #ffffff;
   border-radius: 26px;
@@ -238,7 +238,7 @@
 }
 
 .main-nav__tab-link--catalog:hover,
-.main-nav__tab-link--catalog:focus-within {
+.main-nav__tab-link--catalog:focus {
   outline: none;
   background-color: #ffffff;
   border-radius: 26px;
@@ -284,7 +284,7 @@
   display: block;
 }
 
-.dropdown-wrapper:focus-within {
+.dropdown-wrapper:focus {
   display: block;
 }
 
@@ -309,7 +309,7 @@
 }
 
 .dropdown__list:hover,
-.dropdown__list:focus-within {
+.dropdown__list:focus {
   display: flex;
 }
 
@@ -328,7 +328,7 @@
 }
 
 .dropdown__link:hover,
-.dropdown__link:focus-within {
+.dropdown__link:focus {
   background-color: #fbded7;
 }
 
@@ -347,7 +347,7 @@
   box-shadow: inset 0px 2px 1px #313235;
 }
 
-.list__row:focus-within a {
+.list__row:focus a {
   outline: none;
 }
 
@@ -490,12 +490,12 @@
   border-radius: 50%;
 }
 
-.user-icons__search a:focus-within {
+.user-icons__search a:focus {
   outline: none;
   background-color: white;
 }
 
-.user-icons__search:focus-within {
+.user-icons__search:focus {
   border-radius: 50%;
 }
 
@@ -508,7 +508,7 @@
   height: 16px;
 }
 
-.user-icons__search a:focus-within:before {
+.user-icons__search a:focus:before {
   outline: none;
   content: "";
   position: absolute;
@@ -813,7 +813,7 @@
   padding: 0;
 }
 
-.slider-icons button:focus-within .slider-icons__icon:after {
+.slider-icons button:focus .slider-icons__icon:after {
   border: 2px dolid black;
 }
 
@@ -2134,7 +2134,7 @@
   width: 540px;
   padding: 21px 14px 21px 21px;
   display: block;
-  background-color: #f8f7f4;
+  background: #f8f7f4;
   border-radius: 4px;
 }
 
