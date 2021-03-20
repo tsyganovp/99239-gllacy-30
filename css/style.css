@@ -76,15 +76,15 @@
 }
 
 .slider-1--active {
-  background: var(--index-first-background);
+  background-color: var(--index-first-background);
 }
 
 .slider-2--active {
-  background: #8996a6;
+  background-color: #8996a6;
 }
 
 .slider-3--active {
-  background: #9d8b84;
+  background-color: #9d8b84;
 }
 
 .link:hover {
@@ -232,7 +232,7 @@
 .main-nav__tab-link:hover,
 .main-nav__tab-link:focus-within {
   outline: none;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 26px;
   color: black;
 }
@@ -240,7 +240,7 @@
 .main-nav__tab-link--catalog:hover,
 .main-nav__tab-link--catalog:focus-within {
   outline: none;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 26px;
   color: black;
 }
@@ -303,7 +303,7 @@
   font-size: 14px;
   line-height: 16px;
   width: 143px;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
 }
@@ -329,11 +329,11 @@
 
 .dropdown__link:hover,
 .dropdown__link:focus-within {
-  background: #fbded7;
+  background-color: #fbded7;
 }
 
 .dropdown__link:active {
-  background: #f6b5a5;
+  background-color: #f6b5a5;
 }
 
 .filter__submit-btn:hover {
@@ -377,7 +377,7 @@
 }
 
 .dropdown__link--active {
-  background: #D07058;
+  background-color: #D07058;
 }
 
 .user-icons {
@@ -407,7 +407,7 @@
   z-index: 2;
   display: block;
   text-align: center;
-  background: #f8f7f4;
+  background-color: #f8f7f4;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
 }
@@ -431,7 +431,7 @@
   width: 311px;
   height: 43px;
   padding-left: 15px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid #d3d3d2;
   box-sizing: border-box;
   border-radius: 4px;
@@ -449,7 +449,7 @@
   height: 32px;
   border: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .search-wrapper {
@@ -530,7 +530,7 @@
 .login-popup {
   display: block;
   width: 277px;
-  background: #f8f7f4;
+  background-color: #f8f7f4;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
 }
@@ -581,7 +581,7 @@
   padding-left: 15px;
   width: 241px;
   height: 44px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid #d3d3d2;
   box-sizing: border-box;
   border-radius: 4px;
@@ -597,7 +597,7 @@
   height: 32px;
   border: none;
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .login-wrapper {
@@ -678,13 +678,13 @@
   height: 32px;
   border: none;
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   padding-left: 18px;
 }
 
 .user-icons__cart--added {
   width: 100px;
-  background: #ffffff;
+  background-color: #ffffff;
   margin: 0;
   padding-left: 18px;
 }
@@ -819,11 +819,11 @@
 
 .slider-icons__icon:hover::after {
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slider-icons__icon:active::after {
-  background: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .slider-icons__icon:after {
@@ -861,7 +861,7 @@
   height: 716px;
   left: 242px;
   top: 0px;
-  background: rgba(218, 228, 239, 0.75);
+  background-color: rgba(218, 228, 239, 0.75);
   -webkit-filter: blur(250px);
           filter: blur(250px);
 }
@@ -1007,7 +1007,7 @@
   text-align: center;
   text-decoration: none;
   color: var(--white-text-color);
-  background: var(--button-background);
+  background-color: var(--button-background);
 
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 700;
@@ -1239,7 +1239,7 @@
   padding-bottom: 0px;
   width: 368px;
   color: var(--dark-text-color);
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   box-sizing: border-box;
   border-radius: 6px;
@@ -1318,7 +1318,7 @@
   width: 253px;
   height: 43px;
   color: var(--white-text-color);
-  background: var(--button-background);
+  background-color: var(--button-background);
   font-size: 18px;
   letter-spacing: inherit;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
@@ -1571,7 +1571,7 @@
 }
 
 .catalog-sorting select {
-  background: var(--form-background);
+  background-color: var(--form-background);
   color: var(--white-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -1645,7 +1645,7 @@
   padding-left: 22px;
   padding-right: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   margin-bottom: 15px;
 }
@@ -1668,7 +1668,7 @@
   width: 20px;
   height: 20px;
   padding: 0;
-  background: #ababab;
+  background-color: #ababab;
   border: 8px solid white;
   border-radius: 50%;
 }
@@ -1711,7 +1711,7 @@
   padding-bottom: 9px;
   display: flex;
   justify-content: flex-start;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   list-style: none;
   font-weight: 500;
@@ -1778,7 +1778,7 @@
   content: "";
   width: 10px;
   height: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
 }
 
@@ -1789,7 +1789,7 @@
   content: "";
   width: 10px;
   height: 10px;
-  background: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
 }
 
@@ -1809,7 +1809,7 @@
   margin: 0;
   padding: 8px 12px 7px 16px;
   margin-top: 6px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -1889,7 +1889,7 @@
   padding-left: 26px;
   padding-right: 21px;
   color: var(--white-text-color);
-  background: var(--form-background);
+  background-color: var(--form-background);
   text-shadow: none;
   font-size: 16px;
   font-weight: 500;
@@ -2007,7 +2007,7 @@
 /* Попапы*/
 
 .feedback-popup {
-  background: #f8f7f4;
+  background-color: #f8f7f4;
 }
 
 .feedback-popup__header {
@@ -2034,7 +2034,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
-  background: #f8f7f4;
+  background-color: #f8f7f4;
   border-radius: 6px;
 }
 
@@ -2134,7 +2134,7 @@
   width: 540px;
   padding: 21px 14px 21px 21px;
   display: block;
-  background: #f8f7f4;
+  background-color: #f8f7f4;
   border-radius: 4px;
 }
 
